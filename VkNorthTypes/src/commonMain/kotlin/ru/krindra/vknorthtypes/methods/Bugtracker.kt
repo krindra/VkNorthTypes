@@ -1,0 +1,168 @@
+package ru.krindra.vknorthtypes.methods
+
+import ru.krindra.vknorthtypes.types.bugtracker.*
+import kotlinx.serialization.json.Json
+import ru.krindra.vknorthtypes.types.base.BaseOkResponse
+import ru.krindra.vknorthtypes.types.base.BaseGetUploadServerResponse
+import ru.krindra.vknorthtypes.types.base.BaseUserGroupFields
+import ru.krindra.vknorthtypes.types.base.BaseBoolResponse
+
+class Bugtracker(private val method: suspend (String, Map<Any, Any?>) -> String, private val json: Json) {
+    /**
+     *
+     * @param companyId 
+     * @param userIds 
+     * @param companyGroupIds 
+     */
+    suspend fun addCompanyGroupsMembers(companyId: Long, userIds: List<Int>, companyGroupIds: List<Int>): BugtrackerAddCompanyGroupsMembersResponse {
+        val response = method("addCompanyGroupsMembers", mapOf("company_id" to companyId, "user_ids" to userIds, "company_group_ids" to companyGroupIds))
+        return json.decodeFromString<BugtrackerAddCompanyGroupsMembersResponse>(response)
+    }
+
+    /**
+     *
+     * @param userIds 
+     * @param companyId 
+     */
+    suspend fun addCompanyMembers(userIds: List<Int>, companyId: Long): BugtrackerAddCompanyMembersResponse {
+        val response = method("addCompanyMembers", mapOf("user_ids" to userIds, "company_id" to companyId))
+        return json.decodeFromString<BugtrackerAddCompanyMembersResponse>(response)
+    }
+
+    /**
+     *
+     * @param bugreportId 
+     * @param status 
+     * @param comment 
+     * @param fromStatuses 
+     * @param notInStatuses 
+     */
+    suspend fun changeBugreportStatus(bugreportId: Long, status: Int? = null, comment: String? = null, fromStatuses: List<Int>? = null, notInStatuses: List<Int>? = null): BaseBoolResponse {
+        val response = method("changeBugreportStatus", mapOf("bugreport_id" to bugreportId, "status" to status, "comment" to comment, "from_statuses" to fromStatuses, "not_in_statuses" to notInStatuses))
+        return json.decodeFromString<BaseBoolResponse>(response)
+    }
+
+    /**
+     *
+     * Creates the comment to bugreport
+     * 
+     * @param bugreportId 
+     * @param text 
+     * @param hidden 
+     * @param force 
+     */
+    suspend fun createComment(bugreportId: Long, text: String? = null, hidden: Boolean? = false, force: Boolean? = false): BugtrackerCreateCommentResponse {
+        val response = method("createComment", mapOf("bugreport_id" to bugreportId, "text" to text, "hidden" to hidden, "force" to force))
+        return json.decodeFromString<BugtrackerCreateCommentResponse>(response)
+    }
+
+    /**
+     *
+     * @param companyId 
+     * @param companyGroupId 
+     * @param count 
+     * @param offset 
+     * @param filterName 
+     * @param extended 
+     * @param fields 
+     */
+    suspend fun getCompanyGroupMembers(companyId: Long, companyGroupId: Long, count: Int? = 10, offset: Int? = 0, filterName: String? = "", extended: Boolean? = false, fields: List<BaseUserGroupFields>? = null): BugtrackerGetCompanyGroupMembersResponse {
+        val response = method("getCompanyGroupMembers", mapOf("company_id" to companyId, "company_group_id" to companyGroupId, "count" to count, "offset" to offset, "filter_name" to filterName, "extended" to extended, "fields" to fields))
+        return json.decodeFromString<BugtrackerGetCompanyGroupMembersResponse>(response)
+    }
+
+    /**
+     *
+     * @param companyId 
+     * @param count 
+     * @param offset 
+     * @param filterName 
+     * @param filterRole 
+     * @param filterNotGroup 
+     * @param filterMemberIds 
+     * @param extended 
+     * @param fields 
+     * @param extra 
+     */
+    suspend fun getCompanyMembers(companyId: Long, count: Int? = 10, offset: Int? = 0, filterName: String? = "", filterRole: Int? = null, filterNotGroup: Int? = 0, filterMemberIds: List<Int>? = listOf(), extended: Boolean? = false, fields: List<BaseUserGroupFields>? = null, extra: Boolean? = false): BugtrackerGetCompanyMembersResponse {
+        val response = method("getCompanyMembers", mapOf("company_id" to companyId, "count" to count, "offset" to offset, "filter_name" to filterName, "filter_role" to filterRole, "filter_not_group" to filterNotGroup, "filter_member_ids" to filterMemberIds, "extended" to extended, "fields" to fields, "extra" to extra))
+        return json.decodeFromString<BugtrackerGetCompanyMembersResponse>(response)
+    }
+
+    /**
+     *
+     * @param productId 
+     * @param versionId 
+     * @param ttl 
+     */
+    suspend fun getDownloadVersionUrl(productId: Long, versionId: Long, ttl: Int? = 600): BugtrackerGetDownloadVersionUrlResponse {
+        val response = method("getDownloadVersionUrl", mapOf("product_id" to productId, "version_id" to versionId, "ttl" to ttl))
+        return json.decodeFromString<BugtrackerGetDownloadVersionUrlResponse>(response)
+    }
+
+    /**
+     *
+     * @param productId 
+     */
+    suspend fun getProductBuildUploadServer(productId: Long): BaseGetUploadServerResponse {
+        val response = method("getProductBuildUploadServer", mapOf("product_id" to productId))
+        return json.decodeFromString<BaseGetUploadServerResponse>(response)
+    }
+
+    /**
+     *
+     * @param companyId 
+     * @param userId 
+     * @param companyGroupId 
+     */
+    suspend fun removeCompanyGroupMember(companyId: Long, userId: Long, companyGroupId: Long): BaseOkResponse {
+        val response = method("removeCompanyGroupMember", mapOf("company_id" to companyId, "user_id" to userId, "company_group_id" to companyGroupId))
+        return json.decodeFromString<BaseOkResponse>(response)
+    }
+
+    /**
+     *
+     * @param userId 
+     * @param companyId 
+     */
+    suspend fun removeCompanyMember(userId: Long, companyId: Long): BaseOkResponse {
+        val response = method("removeCompanyMember", mapOf("user_id" to userId, "company_id" to companyId))
+        return json.decodeFromString<BaseOkResponse>(response)
+    }
+
+    /**
+     *
+     * @param productId 
+     * @param versionId 
+     * @param title 
+     * @param releaseNotes 
+     * @param visible 
+     * @param setRft 
+     */
+    suspend fun saveProductVersion(title: String, productId: Long? = null, versionId: Long? = 0, releaseNotes: String? = null, visible: Boolean? = false, setRft: Boolean? = false): BaseOkResponse {
+        val response = method("saveProductVersion", mapOf("product_id" to productId, "version_id" to versionId, "title" to title, "release_notes" to releaseNotes, "visible" to visible, "set_rft" to setRft))
+        return json.decodeFromString<BaseOkResponse>(response)
+    }
+
+    /**
+     *
+     * @param userId 
+     * @param companyId 
+     * @param role 
+     */
+    suspend fun setCompanyMemberRole(userId: Long, companyId: Long, role: Int): BaseOkResponse {
+        val response = method("setCompanyMemberRole", mapOf("user_id" to userId, "company_id" to companyId, "role" to role))
+        return json.decodeFromString<BaseOkResponse>(response)
+    }
+
+    /**
+     *
+     * @param productId 
+     * @param isOver 
+     */
+    suspend fun setProductIsOver(productId: Long, isOver: Boolean? = false): BaseOkResponse {
+        val response = method("setProductIsOver", mapOf("product_id" to productId, "is_over" to isOver))
+        return json.decodeFromString<BaseOkResponse>(response)
+    }
+
+}

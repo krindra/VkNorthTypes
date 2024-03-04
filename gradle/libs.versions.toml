@@ -1,0 +1,21 @@
+[versions]
+agp = "8.2.2"
+kotlin = "1.9.21"
+nexus-publish = "2.0.0-rc-1"
+android-minSdk = "24"
+android-compileSdk = "33"
+ktor = "2.3.7"
+json = "1.6.2"
+dokka = "1.9.10"
+nmcp = "0.0.4"
+
+[libraries]
+nexus-publish = { module = "io.github.gradle-nexus.publish-plugin:io.github.gradle-nexus.publish-plugin.gradle.plugin", version.ref = "nexus-publish" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "json" }
+
+[plugins]
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+nmcp = { id = "com.gradleup.nmcp", version.ref = "nmcp" }

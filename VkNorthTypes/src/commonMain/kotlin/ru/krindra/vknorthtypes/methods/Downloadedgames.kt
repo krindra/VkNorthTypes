@@ -1,0 +1,16 @@
+package ru.krindra.vknorthtypes.methods
+
+import ru.krindra.vknorthtypes.types.downloadedGames.*
+import kotlinx.serialization.json.Json
+
+class Downloadedgames(private val method: suspend (String, Map<Any, Any?>) -> String, private val json: Json) {
+    /**
+     *
+     * @param userId 
+     */
+    suspend fun getPaidStatus(userId: Long? = null): DownloadedGamesPaidStatusResponse {
+        val response = method("getPaidStatus", mapOf("user_id" to userId))
+        return json.decodeFromString<DownloadedGamesPaidStatusResponse>(response)
+    }
+
+}

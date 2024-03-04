@@ -1,0 +1,18 @@
+package ru.krindra.vknorthtypes.methods
+
+import ru.krindra.vknorthtypes.types.podcasts.*
+import kotlinx.serialization.json.Json
+
+class Podcasts(private val method: suspend (String, Map<Any, Any?>) -> String, private val json: Json) {
+    /**
+     *
+     * @param searchString 
+     * @param offset 
+     * @param count 
+     */
+    suspend fun searchPodcast(searchString: String, offset: Int? = 0, count: Int? = 20): PodcastsSearchPodcastResponse {
+        val response = method("searchPodcast", mapOf("search_string" to searchString, "offset" to offset, "count" to count))
+        return json.decodeFromString<PodcastsSearchPodcastResponse>(response)
+    }
+
+}
