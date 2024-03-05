@@ -13,7 +13,7 @@ publishing {
         pom {
             name.set("VkNorthTypes")
             description.set("Types for VK API")
-            url.set("https://github.com/kravandir")
+            url.set("https://github.com/krindra/VkNorthTypes")
 
             licenses {
                 license {
@@ -27,7 +27,7 @@ publishing {
                 }
             }
             scm {
-                url.set("https://github.com/kravandir")
+                url.set("https://github.com/krindra/VkNorthTypes")
             }
         }
     }
