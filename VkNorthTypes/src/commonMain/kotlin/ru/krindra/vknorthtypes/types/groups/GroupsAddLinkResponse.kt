@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 
 typealias GroupsAddLinkRawResponse = GroupsLinksItem
-@Serializable()
+@Serializable
 data class GroupsAddLinkResponse (
     val response: GroupsAddLinkRawResponse
 )

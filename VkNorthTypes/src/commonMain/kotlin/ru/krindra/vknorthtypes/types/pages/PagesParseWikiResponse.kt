@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.pages
 import kotlinx.serialization.Serializable
 
 typealias PagesParseWikiRawResponse = String
-@Serializable()
+/**
+ *
+ * HTML source
+ * 
+ */
+@Serializable
 data class PagesParseWikiResponse (
     val response: PagesParseWikiRawResponse
 )

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.stories
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Story type.
+ * 
+ */
 @Serializable
 enum class StoriesStoryType(val value: String){
     @SerialName("photo") PHOTO("photo"),

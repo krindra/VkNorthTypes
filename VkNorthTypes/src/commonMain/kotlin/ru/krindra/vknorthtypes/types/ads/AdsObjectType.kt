@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Object type
+ * 
+ */
 @Serializable
 enum class AdsObjectType(val value: String){
     @SerialName("ad") AD("ad"),

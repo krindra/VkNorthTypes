@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class WallSearchExtendedResponse (
     val response: WallSearchExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class WallSearchExtendedRawResponse (
         @SerialName("count") val count: Int,

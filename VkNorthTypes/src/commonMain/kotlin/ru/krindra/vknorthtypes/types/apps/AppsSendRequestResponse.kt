@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.Serializable
 
 typealias AppsSendRequestRawResponse = Int
-@Serializable()
+/**
+ *
+ * Request ID
+ * 
+ */
+@Serializable
 data class AppsSendRequestResponse (
     val response: AppsSendRequestRawResponse
 )

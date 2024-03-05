@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class MarketGetResponse (
     val response: MarketGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param variants 
+     */
     @Serializable
     data class MarketGetRawResponse (
         @SerialName("count") val count: Int,

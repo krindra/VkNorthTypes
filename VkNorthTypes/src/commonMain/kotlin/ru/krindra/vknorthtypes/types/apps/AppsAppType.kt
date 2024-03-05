@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Application type
+ * 
+ */
 @Serializable
 enum class AppsAppType(val value: String){
     @SerialName("app") APP("app"),

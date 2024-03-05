@@ -10,6 +10,14 @@ import kotlinx.serialization.Serializable
 data class StoriesGetStatsV5200Response (
     val response: StoriesGetStatsV5200RawResponse
 ) {
+    /**
+     *
+     * @param preview 
+     * @param achievement 
+     * @param achievementSubtitle 
+     * @param categories 
+     * @param needPrivacyBlock 
+     */
     @Serializable
     data class StoriesGetStatsV5200RawResponse (
         @SerialName("preview") val preview: String? = null,

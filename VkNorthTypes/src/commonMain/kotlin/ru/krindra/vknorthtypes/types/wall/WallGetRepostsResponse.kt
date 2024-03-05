@@ -14,6 +14,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class WallGetRepostsResponse (
     val response: WallGetRepostsRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class WallGetRepostsRawResponse (
         @SerialName("items") val items: List<WallWallpostFull>,

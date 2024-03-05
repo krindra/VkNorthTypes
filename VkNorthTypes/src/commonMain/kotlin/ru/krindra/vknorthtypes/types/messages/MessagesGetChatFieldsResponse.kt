@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesGetChatFieldsRawResponse = MessagesChatFull
-@Serializable()
+@Serializable
 data class MessagesGetChatFieldsResponse (
     val response: MessagesGetChatFieldsRawResponse
 )

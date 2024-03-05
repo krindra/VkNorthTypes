@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.polls
 import kotlinx.serialization.Serializable
 
 typealias PollsSavePhotoRawResponse = PollsBackground
-@Serializable()
+@Serializable
 data class PollsSavePhotoResponse (
     val response: PollsSavePhotoRawResponse
 )

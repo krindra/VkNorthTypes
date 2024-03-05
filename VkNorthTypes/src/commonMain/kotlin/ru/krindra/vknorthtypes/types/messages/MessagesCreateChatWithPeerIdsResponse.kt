@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MessagesCreateChatWithPeerIdsResponse (
     val response: MessagesCreateChatWithPeerIdsRawResponse
 ) {
+    /**
+     *
+     * @param chatId Chat ID
+     */
     @Serializable
     data class MessagesCreateChatWithPeerIdsRawResponse (
         @SerialName("chat_id") val chatId: Long? = null,

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.account
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Request status
+ * 
+ */
 @Serializable
 enum class AccountNameRequestStatus(val value: String){
     @SerialName("success") SUCCESS("success"),

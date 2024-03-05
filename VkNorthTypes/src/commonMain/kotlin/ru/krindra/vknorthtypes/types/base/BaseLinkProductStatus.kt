@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.base
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Status representation
+ * 
+ */
 @Serializable
 enum class BaseLinkProductStatus(val value: String){
     @SerialName("active") ACTIVE("active"),

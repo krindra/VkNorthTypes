@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Status of information about timetable
+ * 
+ */
 @Serializable
 enum class GroupsAddressWorkInfoStatus(val value: String){
     @SerialName("no_information") NO_INFORMATION("no_information"),

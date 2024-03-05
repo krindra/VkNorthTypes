@@ -12,6 +12,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserMin
 data class GroupsGetInvitesExtendedResponse (
     val response: GroupsGetInvitesExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total communities number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class GroupsGetInvitesExtendedRawResponse (
         @SerialName("count") val count: Int,

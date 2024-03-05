@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsCheckLinkRawResponse = AdsLinkStatus
-@Serializable()
+@Serializable
 data class AdsCheckLinkResponse (
     val response: AdsCheckLinkRawResponse
 )

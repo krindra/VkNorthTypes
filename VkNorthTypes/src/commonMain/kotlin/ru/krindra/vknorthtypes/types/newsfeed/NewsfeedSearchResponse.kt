@@ -12,6 +12,14 @@ import ru.krindra.vknorthtypes.types.wall.WallWallpostFull
 data class NewsfeedSearchResponse (
     val response: NewsfeedSearchRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param suggestedQueries 
+     * @param nextFrom 
+     * @param count Filtered number
+     * @param totalCount Total number
+     */
     @Serializable
     data class NewsfeedSearchRawResponse (
         @SerialName("items") val items: List<WallWallpostFull>,

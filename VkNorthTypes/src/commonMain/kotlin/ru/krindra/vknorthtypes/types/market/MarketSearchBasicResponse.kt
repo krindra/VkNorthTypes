@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class MarketSearchBasicResponse (
     val response: MarketSearchBasicRawResponse
 ) {
+    /**
+     *
+     * @param count Current chunk size
+     * @param total Total size
+     * @param hasMore Next chunk present
+     * @param items 
+     */
     @Serializable
     data class MarketSearchBasicRawResponse (
         @SerialName("count") val count: Int,

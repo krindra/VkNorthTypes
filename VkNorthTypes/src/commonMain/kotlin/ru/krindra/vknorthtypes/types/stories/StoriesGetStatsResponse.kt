@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.stories
 import kotlinx.serialization.Serializable
 
 typealias StoriesGetStatsRawResponse = StoriesStoryStats
-@Serializable()
+@Serializable
 data class StoriesGetStatsResponse (
     val response: StoriesGetStatsRawResponse
 )

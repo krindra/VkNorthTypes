@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.gifts
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Gift privacy
+ * 
+ */
 private class GiftsGiftPrivacySerializer: EnumAsIntSerializer<GiftsGiftPrivacy>(
     "GiftsGiftPrivacy", { it.value }, { v -> GiftsGiftPrivacy.values().first { it.value == v } }
 )

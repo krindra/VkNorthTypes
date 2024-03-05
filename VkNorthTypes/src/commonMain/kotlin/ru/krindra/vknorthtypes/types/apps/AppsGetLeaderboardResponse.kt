@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AppsGetLeaderboardResponse (
     val response: AppsGetLeaderboardRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class AppsGetLeaderboardRawResponse (
         @SerialName("count") val count: Int,

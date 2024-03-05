@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetTokenPermissionsResponse (
     val response: GroupsGetTokenPermissionsRawResponse
 ) {
+    /**
+     *
+     * @param mask 
+     * @param permissions 
+     */
     @Serializable
     data class GroupsGetTokenPermissionsRawResponse (
         @SerialName("mask") val mask: Int,

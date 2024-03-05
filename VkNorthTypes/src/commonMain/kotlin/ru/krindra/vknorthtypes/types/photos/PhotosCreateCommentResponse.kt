@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.Serializable
 
 typealias PhotosCreateCommentRawResponse = Int
-@Serializable()
+/**
+ *
+ * Created comment ID
+ * 
+ */
+@Serializable
 data class PhotosCreateCommentResponse (
     val response: PhotosCreateCommentRawResponse
 )

@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.Serializable
 
 typealias AppsGetCatalogRawResponse = AppsCatalogList
-@Serializable()
+@Serializable
 data class AppsGetCatalogResponse (
     val response: AppsGetCatalogRawResponse
 )

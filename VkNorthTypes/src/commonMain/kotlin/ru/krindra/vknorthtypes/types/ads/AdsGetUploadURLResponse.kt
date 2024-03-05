@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsGetUploadURLRawResponse = String
-@Serializable()
+/**
+ *
+ * Photo upload URL
+ * 
+ */
+@Serializable
 data class AdsGetUploadURLResponse (
     val response: AdsGetUploadURLRawResponse
 )

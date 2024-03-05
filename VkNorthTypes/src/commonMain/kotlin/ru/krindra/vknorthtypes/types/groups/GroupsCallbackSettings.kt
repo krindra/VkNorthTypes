@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param apiVersion API version used for the events
+ * @param events 
+ */
 @Serializable
 data class GroupsCallbackSettings (
     @SerialName("events") val events: GroupsLongPollEvents? = null,

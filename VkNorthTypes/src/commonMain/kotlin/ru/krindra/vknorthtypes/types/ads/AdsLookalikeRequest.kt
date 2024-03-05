@@ -6,16 +6,29 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param id Lookalike request ID
+ * @param createTime Lookalike request create time, as Unixtime
+ * @param updateTime Lookalike request update time, as Unixtime
+ * @param scheduledDeleteTime Time by which lookalike request would be deleted, as Unixtime
+ * @param status Lookalike request status
+ * @param sourceType Lookalike request source type
+ * @param sourceRetargetingGroupId Retargeting group id, which was used as lookalike seed
+ * @param sourceName Lookalike request seed name (retargeting group name)
+ * @param audienceCount Lookalike request seed audience size
+ * @param saveAudienceLevels 
+ */
 @Serializable
 data class AdsLookalikeRequest (
-    @SerialName("scheduled_delete_time") val scheduledDeleteTime: Int? = null,
-    @SerialName("id") val id: Long,
-    @SerialName("create_time") val createTime: Int,
-    @SerialName("audience_count") val audienceCount: Int? = null,
-    @SerialName("update_time") val updateTime: Int,
-    @SerialName("source_name") val sourceName: String? = null,
-    @SerialName("save_audience_levels") val saveAudienceLevels: List<AdsLookalikeRequestSaveAudienceLevel>? = null,
     @SerialName("source_type") val sourceType: String,
     @SerialName("source_retargeting_group_id") val sourceRetargetingGroupId: Long? = null,
+    @SerialName("scheduled_delete_time") val scheduledDeleteTime: Int? = null,
     @SerialName("status") val status: String,
+    @SerialName("id") val id: Long,
+    @SerialName("source_name") val sourceName: String? = null,
+    @SerialName("update_time") val updateTime: Int,
+    @SerialName("create_time") val createTime: Int,
+    @SerialName("save_audience_levels") val saveAudienceLevels: List<AdsLookalikeRequestSaveAudienceLevel>? = null,
+    @SerialName("audience_count") val audienceCount: Int? = null,
 )

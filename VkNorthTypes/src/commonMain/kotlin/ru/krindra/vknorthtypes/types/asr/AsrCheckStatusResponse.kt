@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.asr
 import kotlinx.serialization.Serializable
 
 typealias AsrCheckStatusRawResponse = AsrTask
-@Serializable()
+@Serializable
 data class AsrCheckStatusResponse (
     val response: AsrCheckStatusRawResponse
 )

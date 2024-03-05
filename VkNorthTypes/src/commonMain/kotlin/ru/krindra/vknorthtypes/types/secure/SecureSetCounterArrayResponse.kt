@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureSetCounterArrayRawResponse = List<SecureSetCounterItem>
-@Serializable()
+@Serializable
 data class SecureSetCounterArrayResponse (
     val response: SecureSetCounterArrayRawResponse
 )

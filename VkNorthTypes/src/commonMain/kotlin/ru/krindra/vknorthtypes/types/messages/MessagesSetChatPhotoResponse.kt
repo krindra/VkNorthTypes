@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class MessagesSetChatPhotoResponse (
     val response: MessagesSetChatPhotoRawResponse
 ) {
+    /**
+     *
+     * @param messageId Service message ID
+     * @param chat 
+     */
     @Serializable
     data class MessagesSetChatPhotoRawResponse (
         @SerialName("message_id") val messageId: Long? = null,

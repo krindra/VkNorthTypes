@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsGetAdsLayoutRawResponse = List<AdsAdLayout>
-@Serializable()
+@Serializable
 data class AdsGetAdsLayoutResponse (
     val response: AdsGetAdsLayoutRawResponse
 )

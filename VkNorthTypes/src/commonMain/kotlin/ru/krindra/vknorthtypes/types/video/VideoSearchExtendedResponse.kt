@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUser
 data class VideoSearchExtendedResponse (
     val response: VideoSearchExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class VideoSearchExtendedRawResponse (
         @SerialName("count") val count: Int,

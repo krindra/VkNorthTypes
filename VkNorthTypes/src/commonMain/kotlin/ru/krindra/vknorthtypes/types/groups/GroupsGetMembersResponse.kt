@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class GroupsGetMembersResponse (
     val response: GroupsGetMembersRawResponse
 ) {
+    /**
+     *
+     * @param count Total members number
+     * @param items 
+     * @param nextFrom Encoded string for a next page
+     */
     @Serializable
     data class GroupsGetMembersRawResponse (
         @SerialName("count") val count: Int,

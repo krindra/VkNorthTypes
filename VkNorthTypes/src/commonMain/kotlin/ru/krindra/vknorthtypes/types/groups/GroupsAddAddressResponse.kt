@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 
 typealias GroupsAddAddressRawResponse = GroupsAddress
-@Serializable()
+@Serializable
 data class GroupsAddAddressResponse (
     val response: GroupsAddAddressRawResponse
 )

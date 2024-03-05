@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MarketGetCategoriesNewResponse (
     val response: MarketGetCategoriesNewRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     */
     @Serializable
     data class MarketGetCategoriesNewRawResponse (
         @SerialName("items") val items: List<MarketMarketCategoryTree>,

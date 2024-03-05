@@ -10,6 +10,15 @@ import kotlinx.serialization.Serializable
 data class PhotosSaveOwnerPhotoResponse (
     val response: PhotosSaveOwnerPhotoRawResponse
 ) {
+    /**
+     *
+     * @param photoHash Photo hash
+     * @param photoSrc Uploaded image url
+     * @param photoSrcBig Uploaded image url
+     * @param photoSrcSmall Uploaded image url
+     * @param saved Returns 1 if profile photo is saved
+     * @param postId Created post ID
+     */
     @Serializable
     data class PhotosSaveOwnerPhotoRawResponse (
         @SerialName("photo_hash") val photoHash: String,

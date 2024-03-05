@@ -6,9 +6,15 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param isEnabled Information whether live covers is enabled
+ * @param isScalable Information whether live covers photo scaling is enabled
+ * @param storyIds 
+ */
 @Serializable
 data class GroupsLiveCovers (
+    @SerialName("story_ids") val storyIds: List<String>? = null,
     @SerialName("is_scalable") val isScalable: Boolean? = null,
     @SerialName("is_enabled") val isEnabled: Boolean,
-    @SerialName("story_ids") val storyIds: List<String>? = null,
 )

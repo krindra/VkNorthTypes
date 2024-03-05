@@ -14,6 +14,14 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetReactedPeersResponse (
     val response: MessagesGetReactedPeersRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param reactions 
+     * @param counters 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class MessagesGetReactedPeersRawResponse (
         @SerialName("count") val count: Int,

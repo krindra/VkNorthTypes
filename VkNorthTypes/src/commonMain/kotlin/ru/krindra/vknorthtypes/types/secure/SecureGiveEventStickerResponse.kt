@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureGiveEventStickerRawResponse = List<SecureGiveEventStickerItem>
-@Serializable()
+@Serializable
 data class SecureGiveEventStickerResponse (
     val response: SecureGiveEventStickerRawResponse
 )

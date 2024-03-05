@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AdsCreateTargetPixelResponse (
     val response: AdsCreateTargetPixelRawResponse
 ) {
+    /**
+     *
+     * @param id Pixel ID
+     * @param pixel Pixel code
+     */
     @Serializable
     data class AdsCreateTargetPixelRawResponse (
         @SerialName("id") val id: Long? = null,

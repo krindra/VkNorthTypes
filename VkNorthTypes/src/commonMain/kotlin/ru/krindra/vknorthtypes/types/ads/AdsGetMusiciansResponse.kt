@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AdsGetMusiciansResponse (
     val response: AdsGetMusiciansRawResponse
 ) {
+    /**
+     *
+     * @param items Musicians
+     */
     @Serializable
     data class AdsGetMusiciansRawResponse (
         @SerialName("items") val items: List<AdsMusician>,

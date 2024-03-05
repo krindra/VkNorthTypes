@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.notes
 import kotlinx.serialization.Serializable
 
 typealias NotesAddRawResponse = Int
-@Serializable()
+/**
+ *
+ * Note ID
+ * 
+ */
+@Serializable
 data class NotesAddResponse (
     val response: NotesAddRawResponse
 )

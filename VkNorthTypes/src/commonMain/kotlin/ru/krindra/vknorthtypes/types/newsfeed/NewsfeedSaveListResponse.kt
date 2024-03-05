@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.newsfeed
 import kotlinx.serialization.Serializable
 
 typealias NewsfeedSaveListRawResponse = Int
-@Serializable()
+/**
+ *
+ * List ID
+ * 
+ */
+@Serializable
 data class NewsfeedSaveListResponse (
     val response: NewsfeedSaveListRawResponse
 )

@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseCountry
 data class DatabaseGetCountriesResponse (
     val response: DatabaseGetCountriesRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class DatabaseGetCountriesRawResponse (
         @SerialName("count") val count: Int,

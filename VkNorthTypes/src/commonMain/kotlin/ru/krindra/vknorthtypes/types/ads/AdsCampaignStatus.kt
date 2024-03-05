@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Campaign status
+ * 
+ */
 private class AdsCampaignStatusSerializer: EnumAsIntSerializer<AdsCampaignStatus>(
     "AdsCampaignStatus", { it.value }, { v -> AdsCampaignStatus.values().first { it.value == v } }
 )

@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetCallbackServersResponse (
     val response: GroupsGetCallbackServersRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param items 
+     */
     @Serializable
     data class GroupsGetCallbackServersRawResponse (
         @SerialName("count") val count: Int,

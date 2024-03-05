@@ -6,8 +6,13 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param userId 
+ * @param status 
+ */
 @Serializable
 data class SecureGiveEventStickerItem (
-    @SerialName("status") val status: String? = null,
     @SerialName("user_id") val userId: Long? = null,
+    @SerialName("status") val status: String? = null,
 )

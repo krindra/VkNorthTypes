@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class FriendsGetSuggestionsResponse (
     val response: FriendsGetSuggestionsRawResponse
 ) {
+    /**
+     *
+     * @param count Total results number
+     * @param items 
+     */
     @Serializable
     data class FriendsGetSuggestionsRawResponse (
         @SerialName("count") val count: Int,

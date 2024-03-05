@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.users
 import kotlinx.serialization.Serializable
 
 typealias UsersGetRawResponse = List<UsersUserFull>
-@Serializable()
+@Serializable
 data class UsersGetResponse (
     val response: UsersGetRawResponse
 )

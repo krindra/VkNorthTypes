@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param count Total number
+ * @param items 
+ */
 @Serializable
 data class MessagesLongpollMessages (
     @SerialName("items") val items: List<MessagesMessage>? = null,

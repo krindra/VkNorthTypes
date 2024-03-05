@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AdswebGetAdCategoriesResponse (
     val response: AdswebGetAdCategoriesRawResponse
 ) {
+    /**
+     *
+     * @param categories 
+     */
     @Serializable
     data class AdswebGetAdCategoriesRawResponse (
         @SerialName("categories") val categories: List<AdswebGetAdCategoriesResponseCategoriesCategory>,

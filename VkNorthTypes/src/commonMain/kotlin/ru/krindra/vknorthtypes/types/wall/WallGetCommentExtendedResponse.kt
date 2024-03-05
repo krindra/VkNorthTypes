@@ -14,6 +14,15 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class WallGetCommentExtendedResponse (
     val response: WallGetCommentExtendedRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     * @param canPost Information whether current user can comment the post
+     * @param showReplyButton 
+     * @param groupsCanPost Information whether groups can comment the post
+     */
     @Serializable
     data class WallGetCommentExtendedRawResponse (
         @SerialName("items") val items: List<WallWallComment>,

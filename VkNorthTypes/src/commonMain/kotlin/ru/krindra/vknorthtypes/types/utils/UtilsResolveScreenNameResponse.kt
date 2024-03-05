@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.utils
 import kotlinx.serialization.Serializable
 
 typealias UtilsResolveScreenNameRawResponse = UtilsDomainResolved
-@Serializable()
+@Serializable
 data class UtilsResolveScreenNameResponse (
     val response: UtilsResolveScreenNameRawResponse
 )

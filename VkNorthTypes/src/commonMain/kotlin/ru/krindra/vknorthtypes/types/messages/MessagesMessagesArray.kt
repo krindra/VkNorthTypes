@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param count 
+ * @param items 
+ */
 @Serializable
 data class MessagesMessagesArray (
     @SerialName("items") val items: List<MessagesMessage>? = null,

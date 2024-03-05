@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class GroupsGetCallbackConfirmationCodeResponse (
     val response: GroupsGetCallbackConfirmationCodeRawResponse
 ) {
+    /**
+     *
+     * @param code Confirmation code
+     */
     @Serializable
     data class GroupsGetCallbackConfirmationCodeRawResponse (
         @SerialName("code") val code: String,

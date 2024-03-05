@@ -10,6 +10,14 @@ import kotlinx.serialization.Serializable
 data class FriendsDeleteResponse (
     val response: FriendsDeleteRawResponse
 ) {
+    /**
+     *
+     * @param success 
+     * @param friendDeleted Returns 1 if friend has been deleted
+     * @param outRequestDeleted Returns 1 if out request has been canceled
+     * @param inRequestDeleted Returns 1 if incoming request has been declined
+     * @param suggestionDeleted Returns 1 if suggestion has been declined
+     */
     @Serializable
     data class FriendsDeleteRawResponse (
         @SerialName("success") val success: Int,

@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesSendDeprecatedRawResponse = Int
-@Serializable()
+/**
+ *
+ * Message ID
+ * 
+ */
+@Serializable
 data class MessagesSendDeprecatedResponse (
     val response: MessagesSendDeprecatedRawResponse
 )

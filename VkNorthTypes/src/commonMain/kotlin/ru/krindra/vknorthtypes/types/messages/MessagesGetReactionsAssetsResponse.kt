@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class MessagesGetReactionsAssetsResponse (
     val response: MessagesGetReactionsAssetsRawResponse
 ) {
+    /**
+     *
+     * @param version Current reactions assets version
+     * @param assets Base reactions assets to display by default
+     * @param overrideAssets Extended reactions assets for special occasions, user allowed to switch to the base version
+     */
     @Serializable
     data class MessagesGetReactionsAssetsRawResponse (
         @SerialName("version") val version: Int,

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.docs
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Doc attachment type
+ * 
+ */
 @Serializable
 enum class DocsDocAttachmentType(val value: String){
     @SerialName("doc") DOC("doc"),

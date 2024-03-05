@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetByIdObjectResponse (
     val response: GroupsGetByIdObjectRawResponse
 ) {
+    /**
+     *
+     * @param groups 
+     * @param profiles 
+     */
     @Serializable
     data class GroupsGetByIdObjectRawResponse (
         @SerialName("groups") val groups: List<GroupsGroupFull>? = null,

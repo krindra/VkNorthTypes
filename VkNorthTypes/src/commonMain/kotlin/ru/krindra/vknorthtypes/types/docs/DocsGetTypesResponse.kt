@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class DocsGetTypesResponse (
     val response: DocsGetTypesRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class DocsGetTypesRawResponse (
         @SerialName("count") val count: Int,

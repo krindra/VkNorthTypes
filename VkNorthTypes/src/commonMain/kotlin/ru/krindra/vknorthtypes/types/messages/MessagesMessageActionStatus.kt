@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Action status
+ * 
+ */
 @Serializable
 enum class MessagesMessageActionStatus(val value: String){
     @SerialName("chat_photo_update") CHAT_PHOTO_UPDATE("chat_photo_update"),

@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureCheckTokenRawResponse = SecureTokenChecked
-@Serializable()
+@Serializable
 data class SecureCheckTokenResponse (
     val response: SecureCheckTokenRawResponse
 )

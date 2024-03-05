@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 
 typealias GroupsEditAddressRawResponse = GroupsAddress
-@Serializable()
+/**
+ *
+ * Result
+ * 
+ */
+@Serializable
 data class GroupsEditAddressResponse (
     val response: GroupsEditAddressRawResponse
 )

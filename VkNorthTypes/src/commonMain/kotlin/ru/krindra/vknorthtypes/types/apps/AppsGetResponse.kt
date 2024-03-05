@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class AppsGetResponse (
     val response: AppsGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number of applications
+     * @param items List of applications
+     * @param profiles List of friends profiles, used only when return_friends=true
+     * @param groups List of groups, used only when extended=true
+     */
     @Serializable
     data class AppsGetRawResponse (
         @SerialName("count") val count: Int,

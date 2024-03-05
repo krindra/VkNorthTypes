@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.video
 import kotlinx.serialization.Serializable
 
 typealias VideoLiveGetCategoriesRawResponse = List<VideoLiveCategory>
-@Serializable()
+@Serializable
 data class VideoLiveGetCategoriesResponse (
     val response: VideoLiveGetCategoriesRawResponse
 )

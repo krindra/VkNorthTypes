@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseObject
 data class DatabaseGetChairsResponse (
     val response: DatabaseGetChairsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class DatabaseGetChairsRawResponse (
         @SerialName("count") val count: Int,

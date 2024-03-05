@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.wall.WallWallpostFull
 data class NewsfeedGetMentionsResponse (
     val response: NewsfeedGetMentionsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class NewsfeedGetMentionsRawResponse (
         @SerialName("count") val count: Int,

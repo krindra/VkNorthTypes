@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class UtilsGetLastShortenedLinksResponse (
     val response: UtilsGetLastShortenedLinksRawResponse
 ) {
+    /**
+     *
+     * @param count Total number of available results
+     * @param items 
+     */
     @Serializable
     data class UtilsGetLastShortenedLinksRawResponse (
         @SerialName("count") val count: Int,

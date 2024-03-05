@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesMarkAsImportantDeprecatedRawResponse = List<Int>
-@Serializable()
+@Serializable
 data class MessagesMarkAsImportantDeprecatedResponse (
     val response: MessagesMarkAsImportantDeprecatedRawResponse
 )

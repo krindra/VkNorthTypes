@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class AppsGetFriendsListExtendedResponse (
     val response: AppsGetFriendsListExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class AppsGetFriendsListExtendedRawResponse (
         @SerialName("count") val count: Int,

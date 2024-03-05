@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.orders
 import kotlinx.serialization.Serializable
 
 typealias OrdersGetUserSubscriptionByIdRawResponse = OrdersSubscription
-@Serializable()
+@Serializable
 data class OrdersGetUserSubscriptionByIdResponse (
     val response: OrdersGetUserSubscriptionByIdRawResponse
 )

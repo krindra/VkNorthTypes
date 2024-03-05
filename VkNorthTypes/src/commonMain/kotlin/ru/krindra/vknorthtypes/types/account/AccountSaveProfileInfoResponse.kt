@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class AccountSaveProfileInfoResponse (
     val response: AccountSaveProfileInfoRawResponse
 ) {
+    /**
+     *
+     * @param changed 1 if changes has been processed
+     * @param nameRequest 
+     */
     @Serializable
     data class AccountSaveProfileInfoRawResponse (
         @SerialName("changed") val changed: BaseBoolInt,

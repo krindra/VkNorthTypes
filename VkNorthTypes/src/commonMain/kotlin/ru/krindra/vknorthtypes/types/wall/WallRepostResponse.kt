@@ -10,6 +10,15 @@ import kotlinx.serialization.Serializable
 data class WallRepostResponse (
     val response: WallRepostRawResponse
 ) {
+    /**
+     *
+     * @param success 
+     * @param postId Created post ID
+     * @param repostsCount Reposts number
+     * @param wallRepostCount Reposts to wall number
+     * @param mailRepostCount Reposts to mail number
+     * @param likesCount Reposts number
+     */
     @Serializable
     data class WallRepostRawResponse (
         @SerialName("success") val success: Int,

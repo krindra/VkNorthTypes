@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class MarketGetAlbumByIdResponse (
     val response: MarketGetAlbumByIdRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class MarketGetAlbumByIdRawResponse (
         @SerialName("count") val count: Int,

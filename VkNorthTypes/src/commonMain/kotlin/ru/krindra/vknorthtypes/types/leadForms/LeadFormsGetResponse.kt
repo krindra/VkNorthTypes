@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.leadForms
 import kotlinx.serialization.Serializable
 
 typealias LeadFormsGetRawResponse = LeadFormsForm
-@Serializable()
+@Serializable
 data class LeadFormsGetResponse (
     val response: LeadFormsGetRawResponse
 )

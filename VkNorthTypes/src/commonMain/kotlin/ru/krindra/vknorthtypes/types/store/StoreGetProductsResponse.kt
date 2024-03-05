@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class StoreGetProductsResponse (
     val response: StoreGetProductsRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param count 
+     */
     @Serializable
     data class StoreGetProductsRawResponse (
         @SerialName("items") val items: List<StoreProduct>,

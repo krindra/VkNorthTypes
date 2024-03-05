@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class PrettyCardsEditResponse (
     val response: PrettyCardsEditRawResponse
 ) {
+    /**
+     *
+     * @param ownerId Owner ID of edited pretty card
+     * @param cardId Card ID of edited pretty card
+     */
     @Serializable
     data class PrettyCardsEditRawResponse (
         @SerialName("owner_id") val ownerId: Long,

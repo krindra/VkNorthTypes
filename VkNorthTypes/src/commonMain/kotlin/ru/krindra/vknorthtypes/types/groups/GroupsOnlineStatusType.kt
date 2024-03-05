@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Type of online status of group
+ * 
+ */
 @Serializable
 enum class GroupsOnlineStatusType(val value: String){
     @SerialName("none") NONE("none"),

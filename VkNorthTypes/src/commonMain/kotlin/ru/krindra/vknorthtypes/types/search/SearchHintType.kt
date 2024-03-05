@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.search
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Object type
+ * 
+ */
 @Serializable
 enum class SearchHintType(val value: String){
     @SerialName("group") GROUP("group"),

@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.orders
 import kotlinx.serialization.Serializable
 
 typealias OrdersGetByIdRawResponse = List<OrdersOrder>
-@Serializable()
+@Serializable
 data class OrdersGetByIdResponse (
     val response: OrdersGetByIdRawResponse
 )

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class VideoGetLongPollServerResponse (
     val response: VideoGetLongPollServerRawResponse
 ) {
+    /**
+     *
+     * @param url 
+     */
     @Serializable
     data class VideoGetLongPollServerRawResponse (
         @SerialName("url") val url: String,

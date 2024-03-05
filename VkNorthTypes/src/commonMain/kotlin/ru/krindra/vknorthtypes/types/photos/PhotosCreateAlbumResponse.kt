@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.Serializable
 
 typealias PhotosCreateAlbumRawResponse = PhotosPhotoAlbumFull
-@Serializable()
+@Serializable
 data class PhotosCreateAlbumResponse (
     val response: PhotosCreateAlbumRawResponse
 )

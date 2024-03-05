@@ -7,12 +7,21 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.base.BasePropertyExists
 
+/**
+ *
+ * @param withPadding 
+ * @param id 
+ * @param url Image url
+ * @param width Image width
+ * @param height Image height
+ * @param theme 
+ */
 @Serializable
 data class VideoVideoImage (
-    @SerialName("id") val id: String? = null,
-    @SerialName("theme") val theme: String? = null,
-    @SerialName("width") val width: Int,
     @SerialName("height") val height: Int,
+    @SerialName("width") val width: Int,
     @SerialName("with_padding") val withPadding: BasePropertyExists? = null,
     @SerialName("url") val url: String,
+    @SerialName("theme") val theme: String? = null,
+    @SerialName("id") val id: String? = null,
 )

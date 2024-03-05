@@ -14,6 +14,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetChatPreviewResponse (
     val response: MessagesGetChatPreviewRawResponse
 ) {
+    /**
+     *
+     * @param preview 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class MessagesGetChatPreviewRawResponse (
         @SerialName("preview") val preview: MessagesChatPreview? = null,

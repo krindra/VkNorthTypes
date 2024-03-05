@@ -12,6 +12,12 @@ import ru.krindra.vknorthtypes.types.groups.GroupsGroupFull
 data class MarketGetOrdersExtendedResponse (
     val response: MarketGetOrdersExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param groups 
+     */
     @Serializable
     data class MarketGetOrdersExtendedRawResponse (
         @SerialName("count") val count: Int,

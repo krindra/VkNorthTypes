@@ -12,6 +12,16 @@ import ru.krindra.vknorthtypes.types.wall.WallWallComment
 data class VideoGetCommentsResponse (
     val response: VideoGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param currentLevelCount Count of replies of current level
+     * @param canPost Information whether current user can comment the post
+     * @param showReplyButton 
+     * @param groupsCanPost Information whether groups can comment the post
+     * @param realOffset 
+     */
     @Serializable
     data class VideoGetCommentsRawResponse (
         @SerialName("count") val count: Int,

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Sex
+ * 
+ */
 @Serializable
 enum class AdsCriteriaSex(val value: String){
     @SerialName("0") ANY("0"),

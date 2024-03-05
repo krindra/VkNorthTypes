@@ -8,7 +8,7 @@ import ru.krindra.vknorthtypes.types.base.BaseCountry
 
 
 typealias DatabaseGetCountriesByIdRawResponse = List<BaseCountry>
-@Serializable()
+@Serializable
 data class DatabaseGetCountriesByIdResponse (
     val response: DatabaseGetCountriesByIdRawResponse
 )

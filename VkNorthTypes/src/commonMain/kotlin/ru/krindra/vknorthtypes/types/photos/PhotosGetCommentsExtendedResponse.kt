@@ -7,15 +7,23 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.groups.GroupsGroupFull
 
-import ru.krindra.vknorthtypes.types.wall.WallWallComment
-
 import ru.krindra.vknorthtypes.types.users.UsersUserFull
+
+import ru.krindra.vknorthtypes.types.wall.WallWallComment
 
 
 @Serializable
 data class PhotosGetCommentsExtendedResponse (
     val response: PhotosGetCommentsExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param realOffset Real offset of the comments
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class PhotosGetCommentsExtendedRawResponse (
         @SerialName("count") val count: Int,

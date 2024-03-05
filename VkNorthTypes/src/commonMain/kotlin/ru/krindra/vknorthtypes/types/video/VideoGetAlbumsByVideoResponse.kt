@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.video
 import kotlinx.serialization.Serializable
 
 typealias VideoGetAlbumsByVideoRawResponse = List<Int>
-@Serializable()
+@Serializable
 data class VideoGetAlbumsByVideoResponse (
     val response: VideoGetAlbumsByVideoRawResponse
 )

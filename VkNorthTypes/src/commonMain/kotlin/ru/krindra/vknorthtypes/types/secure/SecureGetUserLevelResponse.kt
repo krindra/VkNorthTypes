@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureGetUserLevelRawResponse = List<SecureLevel>
-@Serializable()
+@Serializable
 data class SecureGetUserLevelResponse (
     val response: SecureGetUserLevelRawResponse
 )

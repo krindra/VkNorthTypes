@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.podcast.PodcastExternalData
 data class PodcastsSearchPodcastResponse (
     val response: PodcastsSearchPodcastRawResponse
 ) {
+    /**
+     *
+     * @param podcasts 
+     * @param resultsTotal Total amount of found results
+     */
     @Serializable
     data class PodcastsSearchPodcastRawResponse (
         @SerialName("podcasts") val podcasts: List<PodcastExternalData>,

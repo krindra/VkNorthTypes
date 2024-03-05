@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class LeadFormsDeleteResponse (
     val response: LeadFormsDeleteRawResponse
 ) {
+    /**
+     *
+     * @param formId 
+     */
     @Serializable
     data class LeadFormsDeleteRawResponse (
         @SerialName("form_id") val formId: Long,

@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class VideoEditResponse (
     val response: VideoEditRawResponse
 ) {
+    /**
+     *
+     * @param success 
+     * @param accessKey Access key for access link
+     */
     @Serializable
     data class VideoEditRawResponse (
         @SerialName("success") val success: BaseBoolInt,

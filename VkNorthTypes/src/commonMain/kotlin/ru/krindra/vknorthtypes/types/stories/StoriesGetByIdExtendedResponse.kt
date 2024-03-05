@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class StoriesGetByIdExtendedResponse (
     val response: StoriesGetByIdExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Stories count
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class StoriesGetByIdExtendedRawResponse (
         @SerialName("count") val count: Int,

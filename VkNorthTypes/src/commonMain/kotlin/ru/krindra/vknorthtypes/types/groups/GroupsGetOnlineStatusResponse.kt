@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetOnlineStatusResponse (
     val response: GroupsGetOnlineStatusRawResponse
 ) {
+    /**
+     *
+     * @param minutes Estimated time of answer (for status = answer_mark)
+     * @param status 
+     */
     @Serializable
     data class GroupsGetOnlineStatusRawResponse (
         @SerialName("minutes") val minutes: Int? = null,

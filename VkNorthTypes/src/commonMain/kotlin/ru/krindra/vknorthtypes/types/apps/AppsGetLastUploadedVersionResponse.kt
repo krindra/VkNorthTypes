@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AppsGetLastUploadedVersionResponse (
     val response: AppsGetLastUploadedVersionRawResponse
 ) {
+    /**
+     *
+     * @param version Last uploaded version
+     */
     @Serializable
     data class AppsGetLastUploadedVersionRawResponse (
         @SerialName("version") val version: String,

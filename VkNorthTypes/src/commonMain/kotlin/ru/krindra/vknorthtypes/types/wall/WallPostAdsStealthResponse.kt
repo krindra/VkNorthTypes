@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class WallPostAdsStealthResponse (
     val response: WallPostAdsStealthRawResponse
 ) {
+    /**
+     *
+     * @param postId Created post ID
+     */
     @Serializable
     data class WallPostAdsStealthRawResponse (
         @SerialName("post_id") val postId: Long,

@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class PrettyCardsGetResponse (
     val response: PrettyCardsGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class PrettyCardsGetRawResponse (
         @SerialName("count") val count: Int,

@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.users.UsersSubscriptionsItem
 data class LikesGetListExtendedResponse (
     val response: LikesGetListExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class LikesGetListExtendedRawResponse (
         @SerialName("count") val count: Int,

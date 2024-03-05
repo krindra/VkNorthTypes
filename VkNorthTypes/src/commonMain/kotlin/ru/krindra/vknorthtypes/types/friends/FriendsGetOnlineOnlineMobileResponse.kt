@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class FriendsGetOnlineOnlineMobileResponse (
     val response: FriendsGetOnlineOnlineMobileRawResponse
 ) {
+    /**
+     *
+     * @param online 
+     * @param onlineMobile 
+     */
     @Serializable
     data class FriendsGetOnlineOnlineMobileRawResponse (
         @SerialName("online") val online: List<Int>,

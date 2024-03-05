@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class PhotosMarketAlbumUploadResponse (
     val response: PhotosMarketAlbumUploadRawResponse
 ) {
+    /**
+     *
+     * @param gid Community ID
+     * @param hash Uploading hash
+     * @param photo Uploaded photo data
+     * @param server Upload server number
+     */
     @Serializable
     data class PhotosMarketAlbumUploadRawResponse (
         @SerialName("gid") val gid: Long? = null,

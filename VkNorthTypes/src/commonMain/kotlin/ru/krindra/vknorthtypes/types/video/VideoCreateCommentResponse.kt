@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.video
 import kotlinx.serialization.Serializable
 
 typealias VideoCreateCommentRawResponse = Int
-@Serializable()
+/**
+ *
+ * Created comment ID
+ * 
+ */
+@Serializable
 data class VideoCreateCommentResponse (
     val response: VideoCreateCommentRawResponse
 )

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.utils
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Link status
+ * 
+ */
 @Serializable
 enum class UtilsLinkCheckedStatus(val value: String){
     @SerialName("not_banned") NOT_BANNED("not_banned"),

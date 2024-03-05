@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsImportTargetContactsRawResponse = Int
-@Serializable()
+/**
+ *
+ * Imported contacts number
+ * 
+ */
+@Serializable
 data class AdsImportTargetContactsResponse (
     val response: AdsImportTargetContactsRawResponse
 )

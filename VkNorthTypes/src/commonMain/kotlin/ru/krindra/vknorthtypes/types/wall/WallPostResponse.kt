@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class WallPostResponse (
     val response: WallPostRawResponse
 ) {
+    /**
+     *
+     * @param postId Created post ID
+     */
     @Serializable
     data class WallPostRawResponse (
         @SerialName("post_id") val postId: Long,

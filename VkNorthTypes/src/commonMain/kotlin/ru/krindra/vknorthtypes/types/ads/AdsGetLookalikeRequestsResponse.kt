@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AdsGetLookalikeRequestsResponse (
     val response: AdsGetLookalikeRequestsRawResponse
 ) {
+    /**
+     *
+     * @param count Total count of found lookalike requests
+     * @param items found lookalike requests
+     */
     @Serializable
     data class AdsGetLookalikeRequestsRawResponse (
         @SerialName("count") val count: Int,

@@ -14,6 +14,11 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class NewsfeedGetBannedExtendedResponse (
     val response: NewsfeedGetBannedExtendedRawResponse
 ) {
+    /**
+     *
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class NewsfeedGetBannedExtendedRawResponse (
         @SerialName("profiles") val profiles: List<UsersUserFull>? = null,

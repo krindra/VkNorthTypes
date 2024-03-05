@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.appWidgets
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param count 
+ * @param items 
+ */
 @Serializable
 data class AppWidgetsPhotos (
     @SerialName("items") val items: List<AppWidgetsPhoto>? = null,

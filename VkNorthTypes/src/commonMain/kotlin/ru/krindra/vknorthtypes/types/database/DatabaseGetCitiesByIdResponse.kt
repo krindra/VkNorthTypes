@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.database
 import kotlinx.serialization.Serializable
 
 typealias DatabaseGetCitiesByIdRawResponse = List<DatabaseCityById>
-@Serializable()
+@Serializable
 data class DatabaseGetCitiesByIdResponse (
     val response: DatabaseGetCitiesByIdRawResponse
 )

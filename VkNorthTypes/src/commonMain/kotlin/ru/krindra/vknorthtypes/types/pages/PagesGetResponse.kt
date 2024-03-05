@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.pages
 import kotlinx.serialization.Serializable
 
 typealias PagesGetRawResponse = PagesWikipageFull
-@Serializable()
+@Serializable
 data class PagesGetResponse (
     val response: PagesGetRawResponse
 )

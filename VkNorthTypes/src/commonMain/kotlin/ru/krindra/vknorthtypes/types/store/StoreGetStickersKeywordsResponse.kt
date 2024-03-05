@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class StoreGetStickersKeywordsResponse (
     val response: StoreGetStickersKeywordsRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param dictionary 
+     * @param chunksCount Total count of chunks to load
+     * @param chunksHash Chunks version hash
+     */
     @Serializable
     data class StoreGetStickersKeywordsRawResponse (
         @SerialName("count") val count: Int,

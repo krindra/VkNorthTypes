@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class GroupsGetRequestsFieldsResponse (
     val response: GroupsGetRequestsFieldsRawResponse
 ) {
+    /**
+     *
+     * @param count Total communities number
+     * @param items 
+     */
     @Serializable
     data class GroupsGetRequestsFieldsRawResponse (
         @SerialName("count") val count: Int,

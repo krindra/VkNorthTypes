@@ -14,6 +14,17 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class WallGetCommentsExtendedResponse (
     val response: WallGetCommentsExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     * @param currentLevelCount Count of replies of current level
+     * @param canPost Information whether current user can comment the post
+     * @param showReplyButton 
+     * @param groupsCanPost Information whether groups can comment the post
+     */
     @Serializable
     data class WallGetCommentsExtendedRawResponse (
         @SerialName("count") val count: Int,

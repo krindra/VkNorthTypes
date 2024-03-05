@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.base
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Action type
+ * 
+ */
 @Serializable
 enum class BaseLinkButtonActionType(val value: String){
     @SerialName("open_url") OPEN_URL("open_url"),

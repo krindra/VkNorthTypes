@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 
 typealias GroupsGetLongPollSettingsRawResponse = GroupsLongPollSettings
-@Serializable()
+@Serializable
 data class GroupsGetLongPollSettingsResponse (
     val response: GroupsGetLongPollSettingsRawResponse
 )

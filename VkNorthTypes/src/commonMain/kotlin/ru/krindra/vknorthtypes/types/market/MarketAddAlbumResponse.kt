@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class MarketAddAlbumResponse (
     val response: MarketAddAlbumRawResponse
 ) {
+    /**
+     *
+     * @param marketAlbumId Album ID
+     * @param albumsCount Albums count
+     */
     @Serializable
     data class MarketAddAlbumRawResponse (
         @SerialName("market_album_id") val marketAlbumId: Long? = null,

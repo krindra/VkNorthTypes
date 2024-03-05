@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Review status
+ * 
+ */
 private class AdsAdApprovedSerializer: EnumAsIntSerializer<AdsAdApproved>(
     "AdsAdApproved", { it.value }, { v -> AdsAdApproved.values().first { it.value == v } }
 )

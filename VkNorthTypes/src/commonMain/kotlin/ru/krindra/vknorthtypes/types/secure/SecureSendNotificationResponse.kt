@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureSendNotificationRawResponse = List<Int>
-@Serializable()
+@Serializable
 data class SecureSendNotificationResponse (
     val response: SecureSendNotificationRawResponse
 )

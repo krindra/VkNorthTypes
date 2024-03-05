@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.prettyCards
 import kotlinx.serialization.Serializable
 
 typealias PrettyCardsGetUploadURLRawResponse = String
-@Serializable()
+/**
+ *
+ * Upload URL
+ * 
+ */
+@Serializable
 data class PrettyCardsGetUploadURLResponse (
     val response: PrettyCardsGetUploadURLRawResponse
 )

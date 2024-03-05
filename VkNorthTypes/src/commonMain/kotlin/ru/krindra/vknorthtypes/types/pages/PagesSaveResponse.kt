@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.pages
 import kotlinx.serialization.Serializable
 
 typealias PagesSaveRawResponse = Int
-@Serializable()
+/**
+ *
+ * Page ID
+ * 
+ */
+@Serializable
 data class PagesSaveResponse (
     val response: PagesSaveRawResponse
 )

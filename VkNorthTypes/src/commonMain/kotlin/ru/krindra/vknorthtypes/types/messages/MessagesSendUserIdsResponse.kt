@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesSendUserIdsRawResponse = List<MessagesSendUserIdsResponseItem>
-@Serializable()
+@Serializable
 data class MessagesSendUserIdsResponse (
     val response: MessagesSendUserIdsRawResponse
 )

@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AdsGetCategoriesResponse (
     val response: AdsGetCategoriesRawResponse
 ) {
+    /**
+     *
+     * @param v1 Old categories
+     * @param v2 Actual categories
+     */
     @Serializable
     data class AdsGetCategoriesRawResponse (
         @SerialName("v1") val v1: List<AdsCategory>? = null,

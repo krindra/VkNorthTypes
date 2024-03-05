@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseStickerNew
 data class StoreGetFavoriteStickersResponse (
     val response: StoreGetFavoriteStickersRawResponse
 ) {
+    /**
+     *
+     * @param count Count of favorite stickers
+     * @param items List of sticker objects
+     */
     @Serializable
     data class StoreGetFavoriteStickersRawResponse (
         @SerialName("count") val count: Int,

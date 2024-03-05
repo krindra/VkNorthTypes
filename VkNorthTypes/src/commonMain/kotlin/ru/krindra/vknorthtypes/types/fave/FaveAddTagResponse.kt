@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.fave
 import kotlinx.serialization.Serializable
 
 typealias FaveAddTagRawResponse = FaveTag
-@Serializable()
+@Serializable
 data class FaveAddTagResponse (
     val response: FaveAddTagRawResponse
 )

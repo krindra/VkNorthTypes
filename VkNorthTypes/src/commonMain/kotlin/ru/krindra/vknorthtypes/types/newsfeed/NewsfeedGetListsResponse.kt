@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class NewsfeedGetListsResponse (
     val response: NewsfeedGetListsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class NewsfeedGetListsRawResponse (
         @SerialName("count") val count: Int,

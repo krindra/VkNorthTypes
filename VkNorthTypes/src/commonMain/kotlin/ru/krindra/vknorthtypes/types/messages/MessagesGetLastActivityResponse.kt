@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesGetLastActivityRawResponse = MessagesLastActivity
-@Serializable()
+@Serializable
 data class MessagesGetLastActivityResponse (
     val response: MessagesGetLastActivityRawResponse
 )

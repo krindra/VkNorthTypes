@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class FaveGetResponse (
     val response: FaveGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class FaveGetRawResponse (
         @SerialName("count") val count: Int,

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MarketGetOrderByIdResponse (
     val response: MarketGetOrderByIdRawResponse
 ) {
+    /**
+     *
+     * @param order 
+     */
     @Serializable
     data class MarketGetOrderByIdRawResponse (
         @SerialName("order") val order: MarketOrder? = null,

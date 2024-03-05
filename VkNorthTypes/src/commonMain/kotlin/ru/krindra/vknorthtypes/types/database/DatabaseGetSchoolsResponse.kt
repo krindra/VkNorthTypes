@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class DatabaseGetSchoolsResponse (
     val response: DatabaseGetSchoolsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class DatabaseGetSchoolsRawResponse (
         @SerialName("count") val count: Int,

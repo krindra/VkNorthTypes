@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.status
 import kotlinx.serialization.Serializable
 
 typealias StatusGetRawResponse = StatusStatus
-@Serializable()
+@Serializable
 data class StatusGetResponse (
     val response: StatusGetRawResponse
 )

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Main section of community
+ * 
+ */
 private class GroupsGroupFullSectionSerializer: EnumAsIntSerializer<GroupsGroupFullSection>(
     "GroupsGroupFullSection", { it.value }, { v -> GroupsGroupFullSection.values().first { it.value == v } }
 )

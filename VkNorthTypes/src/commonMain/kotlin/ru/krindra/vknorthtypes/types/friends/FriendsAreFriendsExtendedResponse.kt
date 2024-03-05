@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.friends
 import kotlinx.serialization.Serializable
 
 typealias FriendsAreFriendsExtendedRawResponse = List<FriendsFriendExtendedStatus>
-@Serializable()
+@Serializable
 data class FriendsAreFriendsExtendedResponse (
     val response: FriendsAreFriendsExtendedRawResponse
 )

@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.Serializable
 
 typealias PhotosGetAlbumsCountRawResponse = Int
-@Serializable()
+/**
+ *
+ * Albums number
+ * 
+ */
+@Serializable
 data class PhotosGetAlbumsCountResponse (
     val response: PhotosGetAlbumsCountRawResponse
 )

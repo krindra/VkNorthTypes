@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class FriendsAddListResponse (
     val response: FriendsAddListRawResponse
 ) {
+    /**
+     *
+     * @param listId List ID
+     */
     @Serializable
     data class FriendsAddListRawResponse (
         @SerialName("list_id") val listId: Long,

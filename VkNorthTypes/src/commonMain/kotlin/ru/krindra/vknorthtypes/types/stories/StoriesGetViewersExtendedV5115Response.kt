@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class StoriesGetViewersExtendedV5115Response (
     val response: StoriesGetViewersExtendedV5115RawResponse
 ) {
+    /**
+     *
+     * @param count Viewers count
+     * @param items 
+     * @param hiddenReason 
+     * @param nextFrom 
+     */
     @Serializable
     data class StoriesGetViewersExtendedV5115RawResponse (
         @SerialName("count") val count: Int,

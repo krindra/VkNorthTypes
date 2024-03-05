@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.stats
 import kotlinx.serialization.Serializable
 
 typealias StatsGetRawResponse = List<StatsPeriod>
-@Serializable()
+@Serializable
 data class StatsGetResponse (
     val response: StatsGetRawResponse
 )

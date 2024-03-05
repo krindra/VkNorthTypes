@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class PhotosOwnerCoverUploadResponse (
     val response: PhotosOwnerCoverUploadRawResponse
 ) {
+    /**
+     *
+     * @param hash Uploading hash
+     * @param photo Uploaded photo data
+     */
     @Serializable
     data class PhotosOwnerCoverUploadRawResponse (
         @SerialName("hash") val hash: String? = null,

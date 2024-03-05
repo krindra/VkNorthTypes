@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetHistoryAttachmentsResponse (
     val response: MessagesGetHistoryAttachmentsRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param nextFrom Value for pagination
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class MessagesGetHistoryAttachmentsRawResponse (
         @SerialName("items") val items: List<MessagesHistoryAttachment>? = null,

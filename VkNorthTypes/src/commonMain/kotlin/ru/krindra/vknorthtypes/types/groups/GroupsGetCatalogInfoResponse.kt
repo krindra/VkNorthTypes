@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class GroupsGetCatalogInfoResponse (
     val response: GroupsGetCatalogInfoRawResponse
 ) {
+    /**
+     *
+     * @param enabled Information whether catalog is enabled for current user
+     * @param categories 
+     */
     @Serializable
     data class GroupsGetCatalogInfoRawResponse (
         @SerialName("enabled") val enabled: BaseBoolInt,

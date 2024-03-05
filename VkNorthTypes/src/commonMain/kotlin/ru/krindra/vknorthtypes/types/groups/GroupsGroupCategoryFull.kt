@@ -6,11 +6,19 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param id Category ID
+ * @param name Category name
+ * @param pageCount Pages number
+ * @param pagePreviews 
+ * @param subcategories 
+ */
 @Serializable
 data class GroupsGroupCategoryFull (
-    @SerialName("page_previews") val pagePreviews: List<GroupsGroup>,
-    @SerialName("id") val id: Long,
     @SerialName("name") val name: String,
-    @SerialName("page_count") val pageCount: Int,
     @SerialName("subcategories") val subcategories: List<GroupsGroupCategory>? = null,
+    @SerialName("page_previews") val pagePreviews: List<GroupsGroup>,
+    @SerialName("page_count") val pageCount: Int,
+    @SerialName("id") val id: Long,
 )

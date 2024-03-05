@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MessagesJoinChatByInviteLinkResponse (
     val response: MessagesJoinChatByInviteLinkRawResponse
 ) {
+    /**
+     *
+     * @param chatId 
+     */
     @Serializable
     data class MessagesJoinChatByInviteLinkRawResponse (
         @SerialName("chat_id") val chatId: Long? = null,

@@ -7,11 +7,19 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.messages.MessagesTemplateActionTypeNames
 
+/**
+ *
+ * @param buttonActions 
+ * @param keyboard client has support keyboard
+ * @param inlineKeyboard client has support inline keyboard
+ * @param carousel client has support carousel
+ * @param langId client or user language id
+ */
 @Serializable
 data class ClientInfoForBots (
     @SerialName("button_actions") val buttonActions: List<MessagesTemplateActionTypeNames>? = null,
-    @SerialName("inline_keyboard") val inlineKeyboard: Boolean? = null,
-    @SerialName("lang_id") val langId: Long? = null,
     @SerialName("keyboard") val keyboard: Boolean? = null,
+    @SerialName("lang_id") val langId: Long? = null,
+    @SerialName("inline_keyboard") val inlineKeyboard: Boolean? = null,
     @SerialName("carousel") val carousel: Boolean? = null,
 )

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AppsIsNotificationsAllowedResponse (
     val response: AppsIsNotificationsAllowedRawResponse
 ) {
+    /**
+     *
+     * @param isAllowed Whether notifications are allowed for current user from concrete app or not
+     */
     @Serializable
     data class AppsIsNotificationsAllowedRawResponse (
         @SerialName("is_allowed") val isAllowed: Boolean,

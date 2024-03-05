@@ -5,21 +5,34 @@ package ru.krindra.vknorthtypes.types.notifications
 // **********
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import ru.krindra.vknorthtypes.types.groups.GroupsGroup
+
 import ru.krindra.vknorthtypes.types.apps.AppsApp
 
-import ru.krindra.vknorthtypes.types.photos.PhotosPhoto
-
-import ru.krindra.vknorthtypes.types.groups.GroupsGroup
+import ru.krindra.vknorthtypes.types.users.UsersUser
 
 import ru.krindra.vknorthtypes.types.video.VideoVideo
 
-import ru.krindra.vknorthtypes.types.users.UsersUser
+import ru.krindra.vknorthtypes.types.photos.PhotosPhoto
 
 
 @Serializable
 data class NotificationsGetResponse (
     val response: NotificationsGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     * @param lastViewed Time when user has been checked notifications last time
+     * @param photos 
+     * @param videos 
+     * @param apps 
+     * @param nextFrom 
+     * @param ttl 
+     */
     @Serializable
     data class NotificationsGetRawResponse (
         @SerialName("count") val count: Int,

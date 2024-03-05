@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class WidgetsGetPagesResponse (
     val response: WidgetsGetPagesRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param pages 
+     */
     @Serializable
     data class WidgetsGetPagesRawResponse (
         @SerialName("count") val count: Int,

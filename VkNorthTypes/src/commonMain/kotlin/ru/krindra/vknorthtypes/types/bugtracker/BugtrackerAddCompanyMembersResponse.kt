@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class BugtrackerAddCompanyMembersResponse (
     val response: BugtrackerAddCompanyMembersRawResponse
 ) {
+    /**
+     *
+     * @param errors 
+     */
     @Serializable
     data class BugtrackerAddCompanyMembersRawResponse (
         @SerialName("errors") val errors: List<String>,

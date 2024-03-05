@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.base
 import kotlinx.serialization.Serializable
 
 typealias BaseGetUploadServerRawResponse = BaseUploadServer
-@Serializable()
+@Serializable
 data class BaseGetUploadServerResponse (
     val response: BaseGetUploadServerRawResponse
 )

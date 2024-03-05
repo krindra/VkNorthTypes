@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MarketAddResponse (
     val response: MarketAddRawResponse
 ) {
+    /**
+     *
+     * @param marketItemId Item ID
+     */
     @Serializable
     data class MarketAddRawResponse (
         @SerialName("market_item_id") val marketItemId: Long,

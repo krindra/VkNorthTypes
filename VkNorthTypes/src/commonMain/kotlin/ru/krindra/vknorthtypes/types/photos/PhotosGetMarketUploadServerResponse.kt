@@ -8,7 +8,7 @@ import ru.krindra.vknorthtypes.types.base.BaseUploadServer
 
 
 typealias PhotosGetMarketUploadServerRawResponse = BaseUploadServer
-@Serializable()
+@Serializable
 data class PhotosGetMarketUploadServerResponse (
     val response: PhotosGetMarketUploadServerRawResponse
 )

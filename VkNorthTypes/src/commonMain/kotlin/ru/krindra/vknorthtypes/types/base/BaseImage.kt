@@ -6,11 +6,19 @@ package ru.krindra.vknorthtypes.types.base
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param id 
+ * @param url Image url
+ * @param width Image width
+ * @param height Image height
+ * @param theme 
+ */
 @Serializable
 data class BaseImage (
-    @SerialName("id") val id: String? = null,
-    @SerialName("theme") val theme: String? = null,
-    @SerialName("width") val width: Int,
     @SerialName("height") val height: Int,
+    @SerialName("width") val width: Int,
     @SerialName("url") val url: String,
+    @SerialName("theme") val theme: String? = null,
+    @SerialName("id") val id: String? = null,
 )

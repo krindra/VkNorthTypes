@@ -8,7 +8,7 @@ import ru.krindra.vknorthtypes.types.base.BaseUploadServer
 
 
 typealias DocsGetUploadServerRawResponse = BaseUploadServer
-@Serializable()
+@Serializable
 data class DocsGetUploadServerResponse (
     val response: DocsGetUploadServerRawResponse
 )

@@ -12,6 +12,12 @@ import ru.krindra.vknorthtypes.types.wall.WallWallComment
 data class PhotosGetCommentsResponse (
     val response: PhotosGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param realOffset Real offset of the comments
+     * @param items 
+     */
     @Serializable
     data class PhotosGetCommentsRawResponse (
         @SerialName("count") val count: Int,

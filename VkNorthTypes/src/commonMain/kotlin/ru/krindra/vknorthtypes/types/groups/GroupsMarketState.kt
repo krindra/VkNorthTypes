@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Declares state if market is enabled in group.
+ * 
+ */
 @Serializable
 enum class GroupsMarketState(val value: String){
     @SerialName("none") NONE("none"),

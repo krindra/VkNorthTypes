@@ -6,6 +6,12 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param title 
+ * @param action 
+ * @param style 
+ */
 @Serializable
 data class PhotosTagsSuggestionItemButton (
     @SerialName("action") val action: String? = null,

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class NewsfeedIgnoreItemResponse (
     val response: NewsfeedIgnoreItemRawResponse
 ) {
+    /**
+     *
+     * @param status 
+     */
     @Serializable
     data class NewsfeedIgnoreItemRawResponse (
         @SerialName("status") val status: Boolean,

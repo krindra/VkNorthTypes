@@ -12,6 +12,10 @@ import ru.krindra.vknorthtypes.types.base.BaseImage
 data class PhotosSaveOwnerCoverPhotoResponse (
     val response: PhotosSaveOwnerCoverPhotoRawResponse
 ) {
+    /**
+     *
+     * @param images 
+     */
     @Serializable
     data class PhotosSaveOwnerCoverPhotoRawResponse (
         @SerialName("images") val images: List<BaseImage>? = null,

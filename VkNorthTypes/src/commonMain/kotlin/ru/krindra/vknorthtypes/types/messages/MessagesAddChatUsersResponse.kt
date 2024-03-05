@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class MessagesAddChatUsersResponse (
     val response: MessagesAddChatUsersRawResponse
 ) {
+    /**
+     *
+     * @param failedPeerIds 
+     * @param failedPhoneNumbers 
+     * @param invitees 
+     */
     @Serializable
     data class MessagesAddChatUsersRawResponse (
         @SerialName("failed_peer_ids") val failedPeerIds: List<Int>,

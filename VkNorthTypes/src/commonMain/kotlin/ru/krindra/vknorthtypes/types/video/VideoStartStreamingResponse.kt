@@ -10,6 +10,16 @@ import kotlinx.serialization.Serializable
 data class VideoStartStreamingResponse (
     val response: VideoStartStreamingRawResponse
 ) {
+    /**
+     *
+     * @param ownerId Owner ID of created video object
+     * @param videoId Video ID of created video object
+     * @param name Video title
+     * @param description Video description
+     * @param accessKey Video access key
+     * @param stream 
+     * @param postId 
+     */
     @Serializable
     data class VideoStartStreamingRawResponse (
         @SerialName("owner_id") val ownerId: Long,

@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetByConversationMessageIdExtendedResponse (
     val response: MessagesGetByConversationMessageIdExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class MessagesGetByConversationMessageIdExtendedRawResponse (
         @SerialName("count") val count: Int,

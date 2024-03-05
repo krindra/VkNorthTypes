@@ -7,15 +7,27 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.groups.GroupsGroupFull
 
-import ru.krindra.vknorthtypes.types.wall.WallWallComment
-
 import ru.krindra.vknorthtypes.types.users.UsersUserFull
+
+import ru.krindra.vknorthtypes.types.wall.WallWallComment
 
 
 @Serializable
 data class VideoGetCommentsExtendedResponse (
     val response: VideoGetCommentsExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     * @param currentLevelCount Count of replies of current level
+     * @param canPost Information whether current user can comment the post
+     * @param showReplyButton 
+     * @param groupsCanPost Information whether groups can comment the post
+     * @param realOffset 
+     */
     @Serializable
     data class VideoGetCommentsExtendedRawResponse (
         @SerialName("count") val count: Int,

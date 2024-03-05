@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class FriendsGetRequestsResponse (
     val response: FriendsGetRequestsRawResponse
 ) {
+    /**
+     *
+     * @param count Total requests number
+     * @param items 
+     * @param countUnread Total unread requests number
+     * @param lastViewed Friend requests last viewed timestamp
+     */
     @Serializable
     data class FriendsGetRequestsRawResponse (
         @SerialName("count") val count: Int,

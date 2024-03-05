@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.market
 import kotlinx.serialization.Serializable
 
 typealias MarketCreateCommentRawResponse = Int
-@Serializable()
+/**
+ *
+ * Comment ID
+ * 
+ */
+@Serializable
 data class MarketCreateCommentResponse (
     val response: MarketCreateCommentRawResponse
 )

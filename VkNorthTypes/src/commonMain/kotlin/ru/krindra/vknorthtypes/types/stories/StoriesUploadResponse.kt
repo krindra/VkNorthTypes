@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class StoriesUploadResponse (
     val response: StoriesUploadRawResponse
 ) {
+    /**
+     *
+     * @param uploadResult A string hash that is used in the stories.save method
+     */
     @Serializable
     data class StoriesUploadRawResponse (
         @SerialName("upload_result") val uploadResult: String? = null,

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AdswebGetAdUnitCodeResponse (
     val response: AdswebGetAdUnitCodeRawResponse
 ) {
+    /**
+     *
+     * @param html 
+     */
     @Serializable
     data class AdswebGetAdUnitCodeRawResponse (
         @SerialName("html") val html: String,

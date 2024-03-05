@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesGetConversationMembersRawResponse = MessagesGetConversationMembers
-@Serializable()
+@Serializable
 data class MessagesGetConversationMembersResponse (
     val response: MessagesGetConversationMembersRawResponse
 )

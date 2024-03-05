@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Size type
+ * 
+ */
 @Serializable
 enum class PhotosPhotoSizesType(val value: String){
     @SerialName("t") T("t"),

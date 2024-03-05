@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AccountChangePasswordResponse (
     val response: AccountChangePasswordRawResponse
 ) {
+    /**
+     *
+     * @param token New token
+     * @param secret New secret
+     */
     @Serializable
     data class AccountChangePasswordRawResponse (
         @SerialName("token") val token: String,

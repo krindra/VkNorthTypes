@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class VideoGetAlbumsExtendedResponse (
     val response: VideoGetAlbumsExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class VideoGetAlbumsExtendedRawResponse (
         @SerialName("count") val count: Int,

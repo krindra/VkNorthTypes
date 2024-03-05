@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class BugtrackerGetCompanyGroupMembersResponse (
     val response: BugtrackerGetCompanyGroupMembersRawResponse
 ) {
+    /**
+     *
+     * @param userIds 
+     * @param profiles 
+     */
     @Serializable
     data class BugtrackerGetCompanyGroupMembersRawResponse (
         @SerialName("user_ids") val userIds: List<Int>,

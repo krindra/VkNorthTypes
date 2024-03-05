@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.calls
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param list 
+ * @param count Participants count
+ */
 @Serializable
 data class CallsParticipants (
     @SerialName("list") val list: List<Int>? = null,

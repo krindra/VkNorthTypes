@@ -14,6 +14,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetMessagesReactionsResponse (
     val response: MessagesGetMessagesReactionsRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class MessagesGetMessagesReactionsRawResponse (
         @SerialName("items") val items: List<MessagesReactionCountersResponseItem>,

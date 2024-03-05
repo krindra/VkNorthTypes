@@ -7,15 +7,22 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.groups.GroupsGroupFull
 
-import ru.krindra.vknorthtypes.types.wall.WallWallComment
-
 import ru.krindra.vknorthtypes.types.users.UsersUserFull
+
+import ru.krindra.vknorthtypes.types.wall.WallWallComment
 
 
 @Serializable
 data class MarketGetCommentsResponse (
     val response: MarketGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles List of users, available only if extended=true exists in query params
+     * @param groups List of groups, available only if extended=true exists in query params
+     */
     @Serializable
     data class MarketGetCommentsRawResponse (
         @SerialName("count") val count: Int,

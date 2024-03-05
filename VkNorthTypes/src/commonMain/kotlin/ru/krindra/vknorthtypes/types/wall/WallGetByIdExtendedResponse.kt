@@ -14,6 +14,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class WallGetByIdExtendedResponse (
     val response: WallGetByIdExtendedRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class WallGetByIdExtendedRawResponse (
         @SerialName("items") val items: List<WallWallItem>,

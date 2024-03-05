@@ -6,11 +6,19 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param userIds 
+ * @param groupId 
+ * @param name 
+ * @param webview 
+ * @param platforms 
+ */
 @Serializable
 data class AppsTestingGroup (
-    @SerialName("group_id") val groupId: Long,
-    @SerialName("name") val name: String? = null,
-    @SerialName("webview") val webview: String? = null,
-    @SerialName("user_ids") val userIds: List<Int>,
     @SerialName("platforms") val platforms: List<String>? = null,
+    @SerialName("webview") val webview: String? = null,
+    @SerialName("name") val name: String? = null,
+    @SerialName("user_ids") val userIds: List<Int>,
+    @SerialName("group_id") val groupId: Long,
 )

@@ -12,6 +12,14 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class GroupsIsMemberExtendedResponse (
     val response: GroupsIsMemberExtendedRawResponse
 ) {
+    /**
+     *
+     * @param member Information whether user is a member of the group
+     * @param invitation Information whether user has been invited to the group
+     * @param canInvite Information whether user can be invited
+     * @param canRecall Information whether user's invite to the group can be recalled
+     * @param request Information whether user has sent request to the group
+     */
     @Serializable
     data class GroupsIsMemberExtendedRawResponse (
         @SerialName("member") val member: BaseBoolInt,

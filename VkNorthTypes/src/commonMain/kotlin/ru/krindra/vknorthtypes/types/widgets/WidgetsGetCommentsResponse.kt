@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class WidgetsGetCommentsResponse (
     val response: WidgetsGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param posts 
+     */
     @Serializable
     data class WidgetsGetCommentsRawResponse (
         @SerialName("count") val count: Int,

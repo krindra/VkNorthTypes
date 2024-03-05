@@ -12,6 +12,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class FriendsGetFieldsResponse (
     val response: FriendsGetFieldsRawResponse
 ) {
+    /**
+     *
+     * @param count Total friends number
+     * @param items 
+     * @param profiles 
+     */
     @Serializable
     data class FriendsGetFieldsRawResponse (
         @SerialName("count") val count: Int,

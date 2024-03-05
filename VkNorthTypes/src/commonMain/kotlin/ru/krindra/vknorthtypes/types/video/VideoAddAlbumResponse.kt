@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class VideoAddAlbumResponse (
     val response: VideoAddAlbumRawResponse
 ) {
+    /**
+     *
+     * @param albumId Created album ID
+     */
     @Serializable
     data class VideoAddAlbumRawResponse (
         @SerialName("album_id") val albumId: Long,

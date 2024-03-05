@@ -12,6 +12,13 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class BoardGetTopicsResponse (
     val response: BoardGetTopicsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param defaultOrder 
+     * @param canAddTopics Information whether current user can add topic
+     */
     @Serializable
     data class BoardGetTopicsRawResponse (
         @SerialName("count") val count: Int,

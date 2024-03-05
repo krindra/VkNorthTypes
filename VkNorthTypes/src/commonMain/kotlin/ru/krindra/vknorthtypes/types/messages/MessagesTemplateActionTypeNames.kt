@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Template action type names
+ * 
+ */
 @Serializable
 enum class MessagesTemplateActionTypeNames(val value: String){
     @SerialName("text") TEXT("text"),

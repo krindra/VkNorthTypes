@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AdswebGetFraudHistoryResponse (
     val response: AdswebGetFraudHistoryRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param entries 
+     */
     @Serializable
     data class AdswebGetFraudHistoryRawResponse (
         @SerialName("count") val count: Int,

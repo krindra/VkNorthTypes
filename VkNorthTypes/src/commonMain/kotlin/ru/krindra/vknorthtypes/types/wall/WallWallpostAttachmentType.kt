@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.wall
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Attachment type
+ * 
+ */
 @Serializable
 enum class WallWallpostAttachmentType(val value: String){
     @SerialName("photo") PHOTO("photo"),

@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.Serializable
 
 typealias PhotosPutTagRawResponse = Int
-@Serializable()
+/**
+ *
+ * Created tag ID
+ * 
+ */
+@Serializable
 data class PhotosPutTagResponse (
     val response: PhotosPutTagRawResponse
 )

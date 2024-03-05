@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class LeadFormsGetLeadsResponse (
     val response: LeadFormsGetLeadsRawResponse
 ) {
+    /**
+     *
+     * @param leads 
+     * @param nextPageToken 
+     */
     @Serializable
     data class LeadFormsGetLeadsRawResponse (
         @SerialName("leads") val leads: List<LeadFormsLead>,

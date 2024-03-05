@@ -6,8 +6,13 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param level Level
+ * @param uid User ID
+ */
 @Serializable
 data class SecureLevel (
-    @SerialName("level") val level: Int? = null,
     @SerialName("uid") val uid: Long? = null,
+    @SerialName("level") val level: Int? = null,
 )

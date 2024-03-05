@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.prettyCards
 import kotlinx.serialization.Serializable
 
 typealias PrettyCardsGetByIdRawResponse = List<PrettyCardsPrettyCardOrError>
-@Serializable()
+@Serializable
 data class PrettyCardsGetByIdResponse (
     val response: PrettyCardsGetByIdRawResponse
 )

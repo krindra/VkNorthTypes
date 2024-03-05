@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.calls
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * State in which call ended up
+ * 
+ */
 @Serializable
 enum class CallsEndState(val value: String){
     @SerialName("canceled_by_initiator") CANCELED_BY_INITIATOR("canceled_by_initiator"),

@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.database
 import kotlinx.serialization.Serializable
 
 typealias DatabaseGetSchoolClassesNewRawResponse = List<DatabaseSchoolClass>
-@Serializable()
+@Serializable
 data class DatabaseGetSchoolClassesNewResponse (
     val response: DatabaseGetSchoolClassesNewRawResponse
 )

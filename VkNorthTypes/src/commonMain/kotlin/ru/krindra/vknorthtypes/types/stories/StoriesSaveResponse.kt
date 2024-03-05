@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUser
 data class StoriesSaveResponse (
     val response: StoriesSaveRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class StoriesSaveRawResponse (
         @SerialName("count") val count: Int,

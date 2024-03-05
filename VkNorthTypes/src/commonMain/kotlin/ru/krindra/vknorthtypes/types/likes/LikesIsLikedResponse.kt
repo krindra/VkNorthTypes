@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class LikesIsLikedResponse (
     val response: LikesIsLikedRawResponse
 ) {
+    /**
+     *
+     * @param liked Information whether user liked the object
+     * @param copied Information whether user reposted the object
+     */
     @Serializable
     data class LikesIsLikedRawResponse (
         @SerialName("liked") val liked: BaseBoolInt,

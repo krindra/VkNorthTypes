@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class DownloadedGamesPaidStatusResponse (
     val response: DownloadedGamesPaidStatusRawResponse
 ) {
+    /**
+     *
+     * @param isPaid Game has been paid
+     */
     @Serializable
     data class DownloadedGamesPaidStatusRawResponse (
         @SerialName("is_paid") val isPaid: Boolean,

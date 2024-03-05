@@ -12,6 +12,10 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class MessagesIsMessagesFromGroupAllowedResponse (
     val response: MessagesIsMessagesFromGroupAllowedRawResponse
 ) {
+    /**
+     *
+     * @param isAllowed 
+     */
     @Serializable
     data class MessagesIsMessagesFromGroupAllowedRawResponse (
         @SerialName("is_allowed") val isAllowed: BaseBoolInt? = null,

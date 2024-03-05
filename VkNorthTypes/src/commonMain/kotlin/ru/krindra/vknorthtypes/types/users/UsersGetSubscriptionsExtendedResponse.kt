@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class UsersGetSubscriptionsExtendedResponse (
     val response: UsersGetSubscriptionsExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number of available results
+     * @param items 
+     */
     @Serializable
     data class UsersGetSubscriptionsExtendedRawResponse (
         @SerialName("count") val count: Int,

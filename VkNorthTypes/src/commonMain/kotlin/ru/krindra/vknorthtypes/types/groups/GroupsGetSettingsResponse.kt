@@ -12,6 +12,56 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class GroupsGetSettingsResponse (
     val response: GroupsGetSettingsRawResponse
 ) {
+    /**
+     *
+     * @param access Community access settings
+     * @param address Community's page domain
+     * @param audio Audio settings
+     * @param articles Articles settings
+     * @param recognizePhoto Photo suggests setting
+     * @param cityId City id of group
+     * @param cityName City name of group
+     * @param contacts 
+     * @param links 
+     * @param sectionsList 
+     * @param mainSection 
+     * @param secondarySection 
+     * @param ageLimits 
+     * @param countryId Country id of group
+     * @param countryName Country name of group
+     * @param description Community description
+     * @param docs Docs settings
+     * @param events 
+     * @param addresses 
+     * @param botsCapabilities By enabling bot abilities, you can send users messages with a customized keyboard attached as well as use other promotional abilities
+     * @param botsStartButton If this setting is enabled, users will see a Start button when they start a chat with your community for the first time
+     * @param botsAddToChat If this setting is enabled then users can add your community to a chat
+     * @param obsceneFilter Information whether the obscene filter is enabled
+     * @param obsceneStopwords Information whether the stop words filter is enabled
+     * @param obsceneWords The list of stop words
+     * @param eventGroupId 
+     * @param photos Photos settings
+     * @param publicCategory Information about the group category
+     * @param publicCategoryList 
+     * @param publicDate 
+     * @param publicDateLabel 
+     * @param publicSubcategory Information about the group subcategory
+     * @param rss URL of the RSS feed
+     * @param startDate Start date
+     * @param finishDate Finish date in Unix-time format
+     * @param subject Community subject ID
+     * @param subjectList 
+     * @param suggestedPrivacy 
+     * @param title Community title
+     * @param topics Topics settings
+     * @param twitter 
+     * @param video Video settings
+     * @param wall Wall settings
+     * @param website Community website
+     * @param phone Community phone
+     * @param email Community email
+     * @param wiki Wiki settings
+     */
     @Serializable
     data class GroupsGetSettingsRawResponse (
         @SerialName("access") val access: GroupsGroupAccess? = null,

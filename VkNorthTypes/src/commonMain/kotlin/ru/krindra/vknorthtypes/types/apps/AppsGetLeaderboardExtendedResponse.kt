@@ -12,6 +12,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUser
 data class AppsGetLeaderboardExtendedResponse (
     val response: AppsGetLeaderboardExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     */
     @Serializable
     data class AppsGetLeaderboardExtendedRawResponse (
         @SerialName("count") val count: Int,

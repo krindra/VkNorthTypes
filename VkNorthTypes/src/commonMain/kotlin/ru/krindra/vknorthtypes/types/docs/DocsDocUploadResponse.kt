@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class DocsDocUploadResponse (
     val response: DocsDocUploadRawResponse
 ) {
+    /**
+     *
+     * @param file Uploaded file data
+     */
     @Serializable
     data class DocsDocUploadRawResponse (
         @SerialName("file") val file: String? = null,

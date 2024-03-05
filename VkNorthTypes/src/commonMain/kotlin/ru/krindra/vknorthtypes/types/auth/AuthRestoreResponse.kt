@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AuthRestoreResponse (
     val response: AuthRestoreRawResponse
 ) {
+    /**
+     *
+     * @param success 1 if success
+     * @param sid Parameter needed to grant access by code
+     */
     @Serializable
     data class AuthRestoreRawResponse (
         @SerialName("success") val success: Int? = null,

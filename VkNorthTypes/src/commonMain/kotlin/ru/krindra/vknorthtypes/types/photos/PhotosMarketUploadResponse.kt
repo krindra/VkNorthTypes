@@ -10,6 +10,15 @@ import kotlinx.serialization.Serializable
 data class PhotosMarketUploadResponse (
     val response: PhotosMarketUploadRawResponse
 ) {
+    /**
+     *
+     * @param cropData Crop data
+     * @param cropHash Crop hash
+     * @param groupId Community ID
+     * @param hash Uploading hash
+     * @param photo Uploaded photo data
+     * @param server Upload server number
+     */
     @Serializable
     data class PhotosMarketUploadRawResponse (
         @SerialName("crop_data") val cropData: String? = null,

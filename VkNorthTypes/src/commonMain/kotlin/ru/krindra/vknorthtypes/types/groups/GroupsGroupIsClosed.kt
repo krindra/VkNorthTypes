@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Information whether community is closed
+ * 
+ */
 private class GroupsGroupIsClosedSerializer: EnumAsIntSerializer<GroupsGroupIsClosed>(
     "GroupsGroupIsClosed", { it.value }, { v -> GroupsGroupIsClosed.values().first { it.value == v } }
 )

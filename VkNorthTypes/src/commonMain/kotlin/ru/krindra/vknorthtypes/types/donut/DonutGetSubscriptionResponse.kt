@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.donut
 import kotlinx.serialization.Serializable
 
 typealias DonutGetSubscriptionRawResponse = DonutDonatorSubscriptionInfo
-@Serializable()
+@Serializable
 data class DonutGetSubscriptionResponse (
     val response: DonutGetSubscriptionRawResponse
 )

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class StreamingGetStemResponse (
     val response: StreamingGetStemRawResponse
 ) {
+    /**
+     *
+     * @param stem part of a word responsible for its lexical meaning
+     */
     @Serializable
     data class StreamingGetStemRawResponse (
         @SerialName("stem") val stem: String? = null,

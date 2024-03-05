@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AdswebGetSitesResponse (
     val response: AdswebGetSitesRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param sites 
+     */
     @Serializable
     data class AdswebGetSitesRawResponse (
         @SerialName("count") val count: Int,

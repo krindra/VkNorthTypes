@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class PrettyCardsDeleteResponse (
     val response: PrettyCardsDeleteRawResponse
 ) {
+    /**
+     *
+     * @param ownerId Owner ID of deleted pretty card
+     * @param cardId Card ID of deleted pretty card
+     * @param error Error reason if error happened
+     */
     @Serializable
     data class PrettyCardsDeleteRawResponse (
         @SerialName("owner_id") val ownerId: Long,

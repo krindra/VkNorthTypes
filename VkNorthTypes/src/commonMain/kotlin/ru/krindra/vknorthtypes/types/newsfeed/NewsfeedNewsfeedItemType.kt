@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.newsfeed
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Item type
+ * 
+ */
 @Serializable
 enum class NewsfeedNewsfeedItemType(val value: String){
     @SerialName("post") POST("post"),

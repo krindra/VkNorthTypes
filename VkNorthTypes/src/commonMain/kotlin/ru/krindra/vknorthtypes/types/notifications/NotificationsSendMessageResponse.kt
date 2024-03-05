@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.notifications
 import kotlinx.serialization.Serializable
 
 typealias NotificationsSendMessageRawResponse = List<NotificationsSendMessageItem>
-@Serializable()
+@Serializable
 data class NotificationsSendMessageResponse (
     val response: NotificationsSendMessageRawResponse
 )

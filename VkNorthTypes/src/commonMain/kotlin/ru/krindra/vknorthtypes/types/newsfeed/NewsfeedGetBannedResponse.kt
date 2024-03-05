@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class NewsfeedGetBannedResponse (
     val response: NewsfeedGetBannedRawResponse
 ) {
+    /**
+     *
+     * @param groups 
+     * @param members 
+     */
     @Serializable
     data class NewsfeedGetBannedRawResponse (
         @SerialName("groups") val groups: List<Int>? = null,

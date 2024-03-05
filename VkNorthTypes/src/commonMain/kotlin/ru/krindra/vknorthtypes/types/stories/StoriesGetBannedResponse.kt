@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class StoriesGetBannedResponse (
     val response: StoriesGetBannedRawResponse
 ) {
+    /**
+     *
+     * @param count Stories count
+     * @param items 
+     */
     @Serializable
     data class StoriesGetBannedRawResponse (
         @SerialName("count") val count: Int,

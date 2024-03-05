@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 
 typealias GroupsGetCallbackSettingsRawResponse = GroupsCallbackSettings
-@Serializable()
+@Serializable
 data class GroupsGetCallbackSettingsResponse (
     val response: GroupsGetCallbackSettingsRawResponse
 )

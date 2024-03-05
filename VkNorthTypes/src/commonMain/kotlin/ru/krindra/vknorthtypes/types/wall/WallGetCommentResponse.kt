@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class WallGetCommentResponse (
     val response: WallGetCommentRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param canPost Information whether current user can comment the post
+     * @param showReplyButton 
+     * @param groupsCanPost Information whether groups can comment the post
+     */
     @Serializable
     data class WallGetCommentRawResponse (
         @SerialName("items") val items: List<WallWallComment>,

@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class WallCreateCommentResponse (
     val response: WallCreateCommentRawResponse
 ) {
+    /**
+     *
+     * @param commentId Created comment ID
+     * @param parentsStack 
+     */
     @Serializable
     data class WallCreateCommentRawResponse (
         @SerialName("comment_id") val commentId: Long,

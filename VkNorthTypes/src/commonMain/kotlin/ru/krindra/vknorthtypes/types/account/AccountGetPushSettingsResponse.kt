@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.account
 import kotlinx.serialization.Serializable
 
 typealias AccountGetPushSettingsRawResponse = AccountPushSettings
-@Serializable()
+@Serializable
 data class AccountGetPushSettingsResponse (
     val response: AccountGetPushSettingsRawResponse
 )

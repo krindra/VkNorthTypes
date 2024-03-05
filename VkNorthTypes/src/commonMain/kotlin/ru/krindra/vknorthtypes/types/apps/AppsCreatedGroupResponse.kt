@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AppsCreatedGroupResponse (
     val response: AppsCreatedGroupRawResponse
 ) {
+    /**
+     *
+     * @param groupId 
+     */
     @Serializable
     data class AppsCreatedGroupRawResponse (
         @SerialName("group_id") val groupId: Long,

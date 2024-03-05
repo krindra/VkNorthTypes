@@ -5,30 +5,50 @@ package ru.krindra.vknorthtypes.types.widgets
 // **********
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import ru.krindra.vknorthtypes.types.wall.WallPostSource
-import ru.krindra.vknorthtypes.types.base.BaseRepostsInfo
-import ru.krindra.vknorthtypes.types.base.BaseLikesInfo
-import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 import ru.krindra.vknorthtypes.types.wall.WallCommentAttachment
+import ru.krindra.vknorthtypes.types.wall.WallPostSource
+import ru.krindra.vknorthtypes.types.base.BaseLikesInfo
+import ru.krindra.vknorthtypes.types.base.BaseRepostsInfo
+import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 import ru.krindra.vknorthtypes.types.users.UsersUserFull
 
+/**
+ *
+ * @param attachments 
+ * @param ownerId Wall owner's ID
+ * @param canDelete Information whether current user can delete the comment
+ * @param comments 
+ * @param date Date when the comment has been added in Unixtime
+ * @param fromId Comment author ID
+ * @param id Comment ID
+ * @param likes 
+ * @param media 
+ * @param postSource 
+ * @param postType Post type
+ * @param reposts 
+ * @param text Comment text
+ * @param toId Wall owner
+ * @param user 
+ * @param isFavorite Information whether the post in favorites list
+ * @param shortTextRate Preview length control parameter
+ */
 @Serializable
 data class WidgetsWidgetComment (
+    @SerialName("post_type") val postType: String,
     @SerialName("reposts") val reposts: BaseRepostsInfo? = null,
+    @SerialName("to_id") val toId: Long,
+    @SerialName("user") val user: UsersUserFull? = null,
+    @SerialName("likes") val likes: BaseLikesInfo? = null,
+    @SerialName("post_source") val postSource: WallPostSource? = null,
+    @SerialName("can_delete") val canDelete: BaseBoolInt? = null,
+    @SerialName("comments") val comments: WidgetsCommentReplies? = null,
+    @SerialName("text") val text: String,
     @SerialName("id") val id: Long,
+    @SerialName("is_favorite") val isFavorite: BaseBoolInt? = null,
+    @SerialName("date") val date: Int,
+    @SerialName("from_id") val fromId: Long,
+    @SerialName("owner_id") val ownerId: Long? = null,
+    @SerialName("attachments") val attachments: List<WallCommentAttachment>? = null,
     @SerialName("short_text_rate") val shortTextRate: Double? = null,
     @SerialName("media") val media: WidgetsCommentMedia? = null,
-    @SerialName("is_favorite") val isFavorite: BaseBoolInt? = null,
-    @SerialName("comments") val comments: WidgetsCommentReplies? = null,
-    @SerialName("date") val date: Int,
-    @SerialName("likes") val likes: BaseLikesInfo? = null,
-    @SerialName("user") val user: UsersUserFull? = null,
-    @SerialName("text") val text: String,
-    @SerialName("attachments") val attachments: List<WallCommentAttachment>? = null,
-    @SerialName("post_type") val postType: String,
-    @SerialName("owner_id") val ownerId: Long? = null,
-    @SerialName("from_id") val fromId: Long,
-    @SerialName("can_delete") val canDelete: BaseBoolInt? = null,
-    @SerialName("post_source") val postSource: WallPostSource? = null,
-    @SerialName("to_id") val toId: Long,
 )

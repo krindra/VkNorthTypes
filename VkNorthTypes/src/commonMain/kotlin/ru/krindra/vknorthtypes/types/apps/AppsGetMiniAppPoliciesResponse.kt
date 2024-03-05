@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AppsGetMiniAppPoliciesResponse (
     val response: AppsGetMiniAppPoliciesRawResponse
 ) {
+    /**
+     *
+     * @param privacyPolicy URL of the app's privacy policy
+     * @param terms URL of the app's terms
+     */
     @Serializable
     data class AppsGetMiniAppPoliciesRawResponse (
         @SerialName("privacy_policy") val privacyPolicy: String? = null,

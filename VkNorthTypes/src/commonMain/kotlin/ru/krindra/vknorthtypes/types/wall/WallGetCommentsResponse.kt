@@ -10,6 +10,15 @@ import kotlinx.serialization.Serializable
 data class WallGetCommentsResponse (
     val response: WallGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param currentLevelCount Count of replies of current level
+     * @param canPost Information whether current user can comment the post
+     * @param showReplyButton 
+     * @param groupsCanPost Information whether groups can comment the post
+     */
     @Serializable
     data class WallGetCommentsRawResponse (
         @SerialName("count") val count: Int,

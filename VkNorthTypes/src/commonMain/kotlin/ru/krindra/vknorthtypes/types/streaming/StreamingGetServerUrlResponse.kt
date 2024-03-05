@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class StreamingGetServerUrlResponse (
     val response: StreamingGetServerUrlRawResponse
 ) {
+    /**
+     *
+     * @param endpoint Server host
+     * @param key Access key
+     */
     @Serializable
     data class StreamingGetServerUrlRawResponse (
         @SerialName("endpoint") val endpoint: String? = null,

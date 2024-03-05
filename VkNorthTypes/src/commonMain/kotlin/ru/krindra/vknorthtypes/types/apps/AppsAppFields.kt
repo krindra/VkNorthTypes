@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * App fields available for response
+ * 
+ */
 @Serializable
 enum class AppsAppFields(val value: String){
     @SerialName("author_group") AUTHOR_GROUP("author_group"),

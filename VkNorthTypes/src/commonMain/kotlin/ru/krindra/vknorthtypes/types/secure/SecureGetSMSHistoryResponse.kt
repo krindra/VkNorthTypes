@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureGetSMSHistoryRawResponse = List<SecureSmsNotification>
-@Serializable()
+@Serializable
 data class SecureGetSMSHistoryResponse (
     val response: SecureGetSMSHistoryRawResponse
 )

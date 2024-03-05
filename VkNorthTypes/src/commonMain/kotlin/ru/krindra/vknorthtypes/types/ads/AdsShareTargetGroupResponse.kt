@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AdsShareTargetGroupResponse (
     val response: AdsShareTargetGroupRawResponse
 ) {
+    /**
+     *
+     * @param id Group ID
+     */
     @Serializable
     data class AdsShareTargetGroupRawResponse (
         @SerialName("id") val id: Long,

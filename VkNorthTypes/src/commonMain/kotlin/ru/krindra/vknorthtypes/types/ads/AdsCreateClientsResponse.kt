@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsCreateClientsRawResponse = List<AdsCreateClientsStatus>
-@Serializable()
+@Serializable
 data class AdsCreateClientsResponse (
     val response: AdsCreateClientsRawResponse
 )

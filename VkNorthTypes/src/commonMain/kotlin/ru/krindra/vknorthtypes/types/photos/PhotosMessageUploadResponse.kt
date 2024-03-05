@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class PhotosMessageUploadResponse (
     val response: PhotosMessageUploadRawResponse
 ) {
+    /**
+     *
+     * @param hash Uploading hash
+     * @param photo Uploaded photo data
+     * @param server Upload server number
+     */
     @Serializable
     data class PhotosMessageUploadRawResponse (
         @SerialName("hash") val hash: String? = null,

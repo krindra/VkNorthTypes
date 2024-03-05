@@ -10,6 +10,14 @@ import kotlinx.serialization.Serializable
 data class BugtrackerGetDownloadVersionUrlResponse (
     val response: BugtrackerGetDownloadVersionUrlRawResponse
 ) {
+    /**
+     *
+     * @param url 
+     * @param appTitle 
+     * @param bundleName 
+     * @param buildId 
+     * @param buildTitle 
+     */
     @Serializable
     data class BugtrackerGetDownloadVersionUrlRawResponse (
         @SerialName("url") val url: String,

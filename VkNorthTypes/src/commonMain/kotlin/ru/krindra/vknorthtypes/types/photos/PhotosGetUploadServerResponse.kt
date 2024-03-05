@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.Serializable
 
 typealias PhotosGetUploadServerRawResponse = PhotosPhotoUpload
-@Serializable()
+@Serializable
 data class PhotosGetUploadServerResponse (
     val response: PhotosGetUploadServerRawResponse
 )

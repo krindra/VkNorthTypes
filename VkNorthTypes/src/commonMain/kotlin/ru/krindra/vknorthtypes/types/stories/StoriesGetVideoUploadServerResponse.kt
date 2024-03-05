@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class StoriesGetVideoUploadServerResponse (
     val response: StoriesGetVideoUploadServerRawResponse
 ) {
+    /**
+     *
+     * @param uploadUrl Upload URL
+     * @param userIds Users ID who can to see story.
+     */
     @Serializable
     data class StoriesGetVideoUploadServerRawResponse (
         @SerialName("upload_url") val uploadUrl: String,

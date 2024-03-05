@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.base
 import kotlinx.serialization.Serializable
 
 typealias BaseBoolRawResponse = BaseBoolInt
-@Serializable()
+@Serializable
 data class BaseBoolResponse (
     val response: BaseBoolRawResponse
 )

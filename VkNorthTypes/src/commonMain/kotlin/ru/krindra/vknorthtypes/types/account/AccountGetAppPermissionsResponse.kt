@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.account
 import kotlinx.serialization.Serializable
 
 typealias AccountGetAppPermissionsRawResponse = Int
-@Serializable()
+/**
+ *
+ * Permissions mask
+ * 
+ */
+@Serializable
 data class AccountGetAppPermissionsResponse (
     val response: AccountGetAppPermissionsRawResponse
 )

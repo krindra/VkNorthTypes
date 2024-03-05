@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.appWidgets
 import kotlinx.serialization.Serializable
 
 typealias AppWidgetsGetImagesByIdRawResponse = List<AppWidgetsPhoto>
-@Serializable()
+@Serializable
 data class AppWidgetsGetImagesByIdResponse (
     val response: AppWidgetsGetImagesByIdRawResponse
 )

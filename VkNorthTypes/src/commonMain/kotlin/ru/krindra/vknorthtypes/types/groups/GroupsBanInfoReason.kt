@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Ban reason
+ * 
+ */
 private class GroupsBanInfoReasonSerializer: EnumAsIntSerializer<GroupsBanInfoReason>(
     "GroupsBanInfoReason", { it.value }, { v -> GroupsBanInfoReason.values().first { it.value == v } }
 )

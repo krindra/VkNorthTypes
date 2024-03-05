@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Campaign type
+ * 
+ */
 @Serializable
 enum class AdsCampaignType(val value: String){
     @SerialName("normal") NORMAL("normal"),

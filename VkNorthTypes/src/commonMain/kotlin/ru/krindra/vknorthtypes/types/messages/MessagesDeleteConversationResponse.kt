@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MessagesDeleteConversationResponse (
     val response: MessagesDeleteConversationRawResponse
 ) {
+    /**
+     *
+     * @param lastDeletedId Id of the last message, that was deleted
+     */
     @Serializable
     data class MessagesDeleteConversationRawResponse (
         @SerialName("last_deleted_id") val lastDeletedId: Long,

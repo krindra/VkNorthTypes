@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.users.UsersSubscriptionsItem
 data class NewsfeedGetSuggestedSourcesResponse (
     val response: NewsfeedGetSuggestedSourcesRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class NewsfeedGetSuggestedSourcesRawResponse (
         @SerialName("count") val count: Int,

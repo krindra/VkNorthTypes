@@ -5,45 +5,77 @@ package ru.krindra.vknorthtypes.types.account
 // **********
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import ru.krindra.vknorthtypes.types.base.BaseCountry
-import ru.krindra.vknorthtypes.types.users.UsersUserMin
-import ru.krindra.vknorthtypes.types.base.BaseCity
-import ru.krindra.vknorthtypes.types.users.UsersUserRelation
 import ru.krindra.vknorthtypes.types.base.BaseSex
 import ru.krindra.vknorthtypes.types.audio.AudioAudio
 import ru.krindra.vknorthtypes.types.users.UsersUserConnections
-import ru.krindra.vknorthtypes.types.base.BaseBoolInt
+import ru.krindra.vknorthtypes.types.base.BaseCity
 import ru.krindra.vknorthtypes.types.users.UsersPersonal
+import ru.krindra.vknorthtypes.types.users.UsersUserMin
+import ru.krindra.vknorthtypes.types.users.UsersUserRelation
+import ru.krindra.vknorthtypes.types.base.BaseCountry
+import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 
+/**
+ *
+ * @param photo200 URL of square photo of the user with 200 pixels in width
+ * @param isServiceAccount flag about service account
+ * @param deactivated Returns if a profile is deleted or blocked
+ * @param firstName User first name
+ * @param hidden Returns if a profile is hidden.
+ * @param id User ID
+ * @param lastName User last name
+ * @param canAccessClosed 
+ * @param isClosed 
+ * @param connections 
+ * @param bdate User's date of birth
+ * @param bdateVisibility Information whether user's birthdate are hidden
+ * @param city 
+ * @param country 
+ * @param homeTown User's hometown
+ * @param maidenName User maiden name
+ * @param nameRequest 
+ * @param personal 
+ * @param phone User phone number with some hidden digits
+ * @param relation User relationship status
+ * @param relationPartner 
+ * @param relationPending Information whether relation status is pending
+ * @param relationRequests 
+ * @param screenName Domain name of the user's page
+ * @param sex User sex
+ * @param status User status
+ * @param statusAudio 
+ * @param interests 
+ * @param languages 
+ */
 @Serializable
 data class AccountUserSettings (
-    @SerialName("bdate") val bdate: String? = null,
-    @SerialName("first_name") val firstName: String? = null,
-    @SerialName("last_name") val lastName: String? = null,
-    @SerialName("connections") val connections: UsersUserConnections? = null,
-    @SerialName("languages") val languages: List<String>? = null,
-    @SerialName("is_closed") val isClosed: Boolean? = null,
-    @SerialName("maiden_name") val maidenName: String? = null,
+    @SerialName("name_request") val nameRequest: AccountNameRequest? = null,
     @SerialName("relation_pending") val relationPending: BaseBoolInt? = null,
+    @SerialName("status") val status: String,
+    @SerialName("is_closed") val isClosed: Boolean? = null,
+    @SerialName("relation_partner") val relationPartner: UsersUserMin? = null,
+    @SerialName("languages") val languages: List<String>? = null,
+    @SerialName("status_audio") val statusAudio: AudioAudio? = null,
+    @SerialName("sex") val sex: BaseSex? = null,
+    @SerialName("home_town") val homeTown: String,
     @SerialName("personal") val personal: UsersPersonal? = null,
     @SerialName("hidden") val hidden: Int? = null,
-    @SerialName("status") val status: String,
-    @SerialName("screen_name") val screenName: String? = null,
-    @SerialName("home_town") val homeTown: String,
+    @SerialName("maiden_name") val maidenName: String? = null,
+    @SerialName("relation_requests") val relationRequests: List<UsersUserMin>? = null,
     @SerialName("country") val country: BaseCountry? = null,
-    @SerialName("interests") val interests: AccountUserSettingsInterests? = null,
-    @SerialName("name_request") val nameRequest: AccountNameRequest? = null,
-    @SerialName("is_service_account") val isServiceAccount: Boolean? = null,
+    @SerialName("deactivated") val deactivated: String? = null,
+    @SerialName("screen_name") val screenName: String? = null,
+    @SerialName("bdate") val bdate: String? = null,
+    @SerialName("photo_200") val photo200: String? = null,
     @SerialName("can_access_closed") val canAccessClosed: Boolean? = null,
+    @SerialName("bdate_visibility") val bdateVisibility: Int? = null,
+    @SerialName("first_name") val firstName: String? = null,
+    @SerialName("last_name") val lastName: String? = null,
+    @SerialName("interests") val interests: AccountUserSettingsInterests? = null,
+    @SerialName("city") val city: BaseCity? = null,
+    @SerialName("is_service_account") val isServiceAccount: Boolean? = null,
     @SerialName("relation") val relation: UsersUserRelation? = null,
     @SerialName("id") val id: Long,
-    @SerialName("photo_200") val photo200: String? = null,
-    @SerialName("bdate_visibility") val bdateVisibility: Int? = null,
-    @SerialName("city") val city: BaseCity? = null,
-    @SerialName("deactivated") val deactivated: String? = null,
-    @SerialName("sex") val sex: BaseSex? = null,
-    @SerialName("relation_partner") val relationPartner: UsersUserMin? = null,
-    @SerialName("status_audio") val statusAudio: AudioAudio? = null,
-    @SerialName("relation_requests") val relationRequests: List<UsersUserMin>? = null,
     @SerialName("phone") val phone: String? = null,
+    @SerialName("connections") val connections: UsersUserConnections? = null,
 )

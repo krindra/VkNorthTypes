@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class WallGetResponse (
     val response: WallGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class WallGetRawResponse (
         @SerialName("count") val count: Int,

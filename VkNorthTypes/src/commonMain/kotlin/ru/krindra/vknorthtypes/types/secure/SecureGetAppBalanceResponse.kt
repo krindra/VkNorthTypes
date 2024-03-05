@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureGetAppBalanceRawResponse = Int
-@Serializable()
+/**
+ *
+ * App balance
+ * 
+ */
+@Serializable
 data class SecureGetAppBalanceResponse (
     val response: SecureGetAppBalanceRawResponse
 )

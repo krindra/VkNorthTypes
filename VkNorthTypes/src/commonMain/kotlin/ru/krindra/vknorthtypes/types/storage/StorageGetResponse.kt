@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.storage
 import kotlinx.serialization.Serializable
 
 typealias StorageGetRawResponse = List<StorageValue>
-@Serializable()
+@Serializable
 data class StorageGetResponse (
     val response: StorageGetRawResponse
 )

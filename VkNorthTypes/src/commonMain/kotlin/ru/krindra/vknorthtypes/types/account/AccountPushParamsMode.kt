@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.account
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Settings parameters
+ * 
+ */
 @Serializable
 enum class AccountPushParamsMode(val value: String){
     @SerialName("on") ON("on"),

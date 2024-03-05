@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class MessagesGetInviteLinkResponse (
     val response: MessagesGetInviteLinkRawResponse
 ) {
+    /**
+     *
+     * @param link 
+     */
     @Serializable
     data class MessagesGetInviteLinkRawResponse (
         @SerialName("link") val link: String? = null,

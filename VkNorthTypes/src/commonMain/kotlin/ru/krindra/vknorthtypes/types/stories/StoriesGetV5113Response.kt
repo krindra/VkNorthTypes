@@ -14,6 +14,16 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class StoriesGetV5113Response (
     val response: StoriesGetV5113RawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     * @param needUploadScreen 
+     * @param trackCode 
+     * @param nextFrom 
+     */
     @Serializable
     data class StoriesGetV5113RawResponse (
         @SerialName("count") val count: Int,

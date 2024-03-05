@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetBannedResponse (
     val response: GroupsGetBannedRawResponse
 ) {
+    /**
+     *
+     * @param count Total users number
+     * @param items 
+     */
     @Serializable
     data class GroupsGetBannedRawResponse (
         @SerialName("count") val count: Int,

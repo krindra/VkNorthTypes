@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.wall
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Type of post source
+ * 
+ */
 @Serializable
 enum class WallPostSourceType(val value: String){
     @SerialName("vk") VK("vk"),

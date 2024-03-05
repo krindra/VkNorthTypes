@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class BugtrackerCreateCommentResponse (
     val response: BugtrackerCreateCommentRawResponse
 ) {
+    /**
+     *
+     * @param comment 
+     * @param commentFlood 
+     * @param subscribeState 
+     */
     @Serializable
     data class BugtrackerCreateCommentRawResponse (
         @SerialName("comment") val comment: BugtrackerComment,

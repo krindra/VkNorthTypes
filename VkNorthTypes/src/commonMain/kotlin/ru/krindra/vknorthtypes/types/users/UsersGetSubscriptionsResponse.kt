@@ -12,6 +12,11 @@ import ru.krindra.vknorthtypes.types.groups.GroupsGroupsArray
 data class UsersGetSubscriptionsResponse (
     val response: UsersGetSubscriptionsRawResponse
 ) {
+    /**
+     *
+     * @param users 
+     * @param groups 
+     */
     @Serializable
     data class UsersGetSubscriptionsRawResponse (
         @SerialName("users") val users: UsersUsersArray,

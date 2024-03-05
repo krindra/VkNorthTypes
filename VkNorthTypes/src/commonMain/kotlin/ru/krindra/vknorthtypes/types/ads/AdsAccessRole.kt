@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Current user's role
+ * 
+ */
 @Serializable
 enum class AdsAccessRole(val value: String){
     @SerialName("admin") ADMIN("admin"),

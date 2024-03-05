@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.Serializable
 
 typealias AppsGetTestingGroupsRawResponse = List<AppsTestingGroup>
-@Serializable()
+@Serializable
 data class AppsGetTestingGroupsResponse (
     val response: AppsGetTestingGroupsRawResponse
 )

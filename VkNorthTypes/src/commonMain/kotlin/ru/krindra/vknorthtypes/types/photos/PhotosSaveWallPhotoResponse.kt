@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.photos
 import kotlinx.serialization.Serializable
 
 typealias PhotosSaveWallPhotoRawResponse = List<PhotosPhoto>
-@Serializable()
+@Serializable
 data class PhotosSaveWallPhotoResponse (
     val response: PhotosSaveWallPhotoRawResponse
 )

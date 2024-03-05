@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class PhotosGetResponse (
     val response: PhotosGetRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class PhotosGetRawResponse (
         @SerialName("count") val count: Int,

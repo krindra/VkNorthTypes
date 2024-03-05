@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsGetRejectionReasonRawResponse = AdsRejectReason
-@Serializable()
+@Serializable
 data class AdsGetRejectionReasonResponse (
     val response: AdsGetRejectionReasonRawResponse
 )

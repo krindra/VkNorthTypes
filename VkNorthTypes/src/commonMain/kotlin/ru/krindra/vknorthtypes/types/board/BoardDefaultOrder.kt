@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.board
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Sort type
+ * 
+ */
 private class BoardDefaultOrderSerializer: EnumAsIntSerializer<BoardDefaultOrder>(
     "BoardDefaultOrder", { it.value }, { v -> BoardDefaultOrder.values().first { it.value == v } }
 )

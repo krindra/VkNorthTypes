@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.utils
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Object type
+ * 
+ */
 @Serializable
 enum class UtilsDomainResolvedType(val value: String){
     @SerialName("user") USER("user"),

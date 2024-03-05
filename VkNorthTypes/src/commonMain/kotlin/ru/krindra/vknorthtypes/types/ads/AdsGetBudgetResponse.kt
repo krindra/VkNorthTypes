@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsGetBudgetRawResponse = String
-@Serializable()
+/**
+ *
+ * Budget
+ * 
+ */
+@Serializable
 data class AdsGetBudgetResponse (
     val response: AdsGetBudgetRawResponse
 )

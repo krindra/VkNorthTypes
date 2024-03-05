@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsGetTargetPixelsRawResponse = List<AdsTargetPixelInfo>
-@Serializable()
+@Serializable
 data class AdsGetTargetPixelsResponse (
     val response: AdsGetTargetPixelsRawResponse
 )

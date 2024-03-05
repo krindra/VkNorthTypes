@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AdsRemoveTargetContactsResponse (
     val response: AdsRemoveTargetContactsRawResponse
 ) {
+    /**
+     *
+     * @param result Operation result
+     */
     @Serializable
     data class AdsRemoveTargetContactsRawResponse (
         @SerialName("result") val result: Int,

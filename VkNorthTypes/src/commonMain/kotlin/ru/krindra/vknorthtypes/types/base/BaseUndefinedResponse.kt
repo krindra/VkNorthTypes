@@ -7,7 +7,7 @@ import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.Serializable
 
 typealias BaseUndefinedRawResponse = JsonElement
-@Serializable()
+@Serializable
 data class BaseUndefinedResponse (
     val response: BaseUndefinedRawResponse
 )

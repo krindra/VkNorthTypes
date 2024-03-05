@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class NotesGetCommentsResponse (
     val response: NotesGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class NotesGetCommentsRawResponse (
         @SerialName("count") val count: Int,

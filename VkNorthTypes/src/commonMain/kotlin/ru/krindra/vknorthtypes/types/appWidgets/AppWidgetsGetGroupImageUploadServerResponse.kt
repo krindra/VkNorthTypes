@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AppWidgetsGetGroupImageUploadServerResponse (
     val response: AppWidgetsGetGroupImageUploadServerRawResponse
 ) {
+    /**
+     *
+     * @param uploadUrl To upload an image, generate POST-request to upload_url with a file in photo field. Then call appWidgets.saveAppImage method
+     */
     @Serializable
     data class AppWidgetsGetGroupImageUploadServerRawResponse (
         @SerialName("upload_url") val uploadUrl: String? = null,

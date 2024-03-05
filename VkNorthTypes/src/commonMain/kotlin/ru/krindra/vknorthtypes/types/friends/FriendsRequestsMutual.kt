@@ -6,8 +6,13 @@ package ru.krindra.vknorthtypes.types.friends
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param count Total mutual friends number
+ * @param users 
+ */
 @Serializable
 data class FriendsRequestsMutual (
-    @SerialName("users") val users: List<Int>? = null,
     @SerialName("count") val count: Int? = null,
+    @SerialName("users") val users: List<Int>? = null,
 )

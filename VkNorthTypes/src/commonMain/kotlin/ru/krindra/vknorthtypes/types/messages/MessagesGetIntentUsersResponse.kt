@@ -12,6 +12,12 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetIntentUsersResponse (
     val response: MessagesGetIntentUsersRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param items 
+     * @param profiles 
+     */
     @Serializable
     data class MessagesGetIntentUsersRawResponse (
         @SerialName("count") val count: Int,

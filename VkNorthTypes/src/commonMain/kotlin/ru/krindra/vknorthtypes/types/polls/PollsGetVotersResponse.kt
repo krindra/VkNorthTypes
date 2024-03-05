@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.polls
 import kotlinx.serialization.Serializable
 
 typealias PollsGetVotersRawResponse = List<PollsVoters>
-@Serializable()
+@Serializable
 data class PollsGetVotersResponse (
     val response: PollsGetVotersRawResponse
 )

@@ -10,6 +10,13 @@ import kotlinx.serialization.Serializable
 data class CallsStartResponse (
     val response: CallsStartRawResponse
 ) {
+    /**
+     *
+     * @param callId Call id
+     * @param joinLink Join link
+     * @param broadcastVideoId video id for link
+     * @param broadcastOvId video id for streaming
+     */
     @Serializable
     data class CallsStartRawResponse (
         @SerialName("call_id") val callId: String? = null,

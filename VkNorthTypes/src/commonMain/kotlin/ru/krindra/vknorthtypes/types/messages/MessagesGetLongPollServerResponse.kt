@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesGetLongPollServerRawResponse = MessagesLongpollParams
-@Serializable()
+@Serializable
 data class MessagesGetLongPollServerResponse (
     val response: MessagesGetLongPollServerRawResponse
 )

@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AsrProcessResponse (
     val response: AsrProcessRawResponse
 ) {
+    /**
+     *
+     * @param taskId ID of created task in UUID format.
+     */
     @Serializable
     data class AsrProcessRawResponse (
         @SerialName("task_id") val taskId: String,

@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.docs
 import kotlinx.serialization.Serializable
 
 typealias DocsAddRawResponse = Int
-@Serializable()
+/**
+ *
+ * Document ID
+ * 
+ */
+@Serializable
 data class DocsAddResponse (
     val response: DocsAddRawResponse
 )

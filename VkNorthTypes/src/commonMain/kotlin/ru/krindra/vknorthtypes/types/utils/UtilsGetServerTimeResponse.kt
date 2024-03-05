@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.utils
 import kotlinx.serialization.Serializable
 
 typealias UtilsGetServerTimeRawResponse = Int
-@Serializable()
+/**
+ *
+ * Time as Unixtime
+ * 
+ */
+@Serializable
 data class UtilsGetServerTimeResponse (
     val response: UtilsGetServerTimeRawResponse
 )

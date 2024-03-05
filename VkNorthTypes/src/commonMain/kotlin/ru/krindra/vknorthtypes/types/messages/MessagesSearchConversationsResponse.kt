@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class MessagesSearchConversationsResponse (
     val response: MessagesSearchConversationsRawResponse
 ) {
+    /**
+     *
+     * @param count Total results number
+     * @param items 
+     */
     @Serializable
     data class MessagesSearchConversationsRawResponse (
         @SerialName("count") val count: Int,

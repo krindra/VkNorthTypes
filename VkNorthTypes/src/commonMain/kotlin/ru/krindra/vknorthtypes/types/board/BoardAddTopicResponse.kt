@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.board
 import kotlinx.serialization.Serializable
 
 typealias BoardAddTopicRawResponse = Int
-@Serializable()
+/**
+ *
+ * Topic ID
+ * 
+ */
+@Serializable
 data class BoardAddTopicResponse (
     val response: BoardAddTopicRawResponse
 )

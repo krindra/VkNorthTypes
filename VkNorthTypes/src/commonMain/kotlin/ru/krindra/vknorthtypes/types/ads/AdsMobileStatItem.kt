@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * @param key 
+ * @param value 
+ */
 @Serializable
 data class AdsMobileStatItem (
     @SerialName("value") val value: Double? = null,

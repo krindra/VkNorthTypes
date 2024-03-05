@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Attachments type
+ * 
+ */
 @Serializable
 enum class MessagesHistoryMessageAttachmentType(val value: String){
     @SerialName("photo") PHOTO("photo"),

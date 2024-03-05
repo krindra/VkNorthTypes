@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.utils
 import kotlinx.serialization.Serializable
 
 typealias UtilsCheckLinkRawResponse = UtilsLinkChecked
-@Serializable()
+@Serializable
 data class UtilsCheckLinkResponse (
     val response: UtilsCheckLinkRawResponse
 )

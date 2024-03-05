@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.orders
 import kotlinx.serialization.Serializable
 
 typealias OrdersChangeStateRawResponse = String
-@Serializable()
+/**
+ *
+ * New state
+ * 
+ */
+@Serializable
 data class OrdersChangeStateResponse (
     val response: OrdersChangeStateRawResponse
 )

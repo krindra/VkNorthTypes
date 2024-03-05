@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.account
 import kotlinx.serialization.Serializable
 
 typealias AccountGetProfileInfoRawResponse = AccountUserSettings
-@Serializable()
+@Serializable
 data class AccountGetProfileInfoResponse (
     val response: AccountGetProfileInfoRawResponse
 )

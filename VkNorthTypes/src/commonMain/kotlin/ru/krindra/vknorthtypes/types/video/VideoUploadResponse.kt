@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class VideoUploadResponse (
     val response: VideoUploadRawResponse
 ) {
+    /**
+     *
+     * @param size Video size
+     * @param videoId Video ID
+     */
     @Serializable
     data class VideoUploadRawResponse (
         @SerialName("size") val size: Int? = null,

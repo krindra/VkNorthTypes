@@ -15,6 +15,19 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class MessagesGetLongPollHistoryResponse (
     val response: MessagesGetLongPollHistoryRawResponse
 ) {
+    /**
+     *
+     * @param history 
+     * @param messages 
+     * @param credentials 
+     * @param profiles 
+     * @param groups 
+     * @param chats 
+     * @param newPts Persistence timestamp
+     * @param fromPts 
+     * @param more Has more
+     * @param conversations 
+     */
     @Serializable
     data class MessagesGetLongPollHistoryRawResponse (
         @SerialName("history") val history: List<List<JsonElement>>? = null,

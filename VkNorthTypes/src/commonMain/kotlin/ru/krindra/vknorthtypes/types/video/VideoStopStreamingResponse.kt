@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class VideoStopStreamingResponse (
     val response: VideoStopStreamingRawResponse
 ) {
+    /**
+     *
+     * @param uniqueViewers 
+     */
     @Serializable
     data class VideoStopStreamingRawResponse (
         @SerialName("unique_viewers") val uniqueViewers: Int? = null,

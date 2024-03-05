@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUser
 data class MessagesGetImportantMessagesResponse (
     val response: MessagesGetImportantMessagesRawResponse
 ) {
+    /**
+     *
+     * @param messages 
+     * @param profiles 
+     * @param groups 
+     * @param conversations 
+     */
     @Serializable
     data class MessagesGetImportantMessagesRawResponse (
         @SerialName("messages") val messages: MessagesMessagesArray,

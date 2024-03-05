@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class AdsCreateLookalikeRequestResponse (
     val response: AdsCreateLookalikeRequestRawResponse
 ) {
+    /**
+     *
+     * @param requestId Request ID
+     */
     @Serializable
     data class AdsCreateLookalikeRequestRawResponse (
         @SerialName("request_id") val requestId: Long? = null,

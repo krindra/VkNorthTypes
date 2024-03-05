@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class LikesGetListResponse (
     val response: LikesGetListRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class LikesGetListRawResponse (
         @SerialName("count") val count: Int,

@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class FriendsGetListsResponse (
     val response: FriendsGetListsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number of friends lists
+     * @param items 
+     */
     @Serializable
     data class FriendsGetListsRawResponse (
         @SerialName("count") val count: Int,

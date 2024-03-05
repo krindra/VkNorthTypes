@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class AccountGetBannedResponse (
     val response: AccountGetBannedRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class AccountGetBannedRawResponse (
         @SerialName("count") val count: Int,

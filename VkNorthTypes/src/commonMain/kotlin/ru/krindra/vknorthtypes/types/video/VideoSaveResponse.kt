@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.video
 import kotlinx.serialization.Serializable
 
 typealias VideoSaveRawResponse = VideoSaveResult
-@Serializable()
+@Serializable
 data class VideoSaveResponse (
     val response: VideoSaveRawResponse
 )

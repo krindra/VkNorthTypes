@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class StreamingGetSettingsResponse (
     val response: StreamingGetSettingsRawResponse
 ) {
+    /**
+     *
+     * @param monthlyLimit streaming monthly tier
+     */
     @Serializable
     data class StreamingGetSettingsRawResponse (
         @SerialName("monthly_limit") val monthlyLimit: String? = null,

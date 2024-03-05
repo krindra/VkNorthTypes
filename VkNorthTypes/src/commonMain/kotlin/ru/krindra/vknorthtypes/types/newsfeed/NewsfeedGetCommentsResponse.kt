@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class NewsfeedGetCommentsResponse (
     val response: NewsfeedGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param items 
+     * @param profiles 
+     * @param groups 
+     * @param nextFrom Next from value
+     */
     @Serializable
     data class NewsfeedGetCommentsRawResponse (
         @SerialName("items") val items: List<NewsfeedCommentsItem>,

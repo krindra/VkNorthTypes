@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.Serializable
 
 typealias AdsGetSuggestionsSchoolsRawResponse = List<AdsTargSuggestionsSchools>
-@Serializable()
+@Serializable
 data class AdsGetSuggestionsSchoolsResponse (
     val response: AdsGetSuggestionsSchoolsRawResponse
 )

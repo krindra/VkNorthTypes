@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AdswebGetStatisticsResponse (
     val response: AdswebGetStatisticsRawResponse
 ) {
+    /**
+     *
+     * @param nextPageId 
+     * @param items 
+     */
     @Serializable
     data class AdswebGetStatisticsRawResponse (
         @SerialName("next_page_id") val nextPageId: String? = null,

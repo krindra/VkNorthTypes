@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class AppsGetScopesResponse (
     val response: AppsGetScopesRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     */
     @Serializable
     data class AppsGetScopesRawResponse (
         @SerialName("count") val count: Int,

@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.groups
 import kotlinx.serialization.Serializable
 
 typealias GroupsIsMemberUserIdsExtendedRawResponse = List<GroupsMemberStatusFull>
-@Serializable()
+@Serializable
 data class GroupsIsMemberUserIdsExtendedResponse (
     val response: GroupsIsMemberUserIdsExtendedRawResponse
 )

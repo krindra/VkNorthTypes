@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class LeadFormsCreateResponse (
     val response: LeadFormsCreateRawResponse
 ) {
+    /**
+     *
+     * @param formId 
+     * @param url 
+     */
     @Serializable
     data class LeadFormsCreateRawResponse (
         @SerialName("form_id") val formId: Long,

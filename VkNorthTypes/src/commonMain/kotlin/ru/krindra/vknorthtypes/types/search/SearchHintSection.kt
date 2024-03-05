@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.search
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Section title
+ * 
+ */
 @Serializable
 enum class SearchHintSection(val value: String){
     @SerialName("groups") GROUPS("groups"),

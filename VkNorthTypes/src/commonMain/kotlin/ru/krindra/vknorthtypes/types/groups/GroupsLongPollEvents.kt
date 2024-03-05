@@ -7,57 +7,111 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 
+/**
+ *
+ * @param audioNew 
+ * @param boardPostDelete 
+ * @param boardPostEdit 
+ * @param boardPostNew 
+ * @param boardPostRestore 
+ * @param groupChangePhoto 
+ * @param groupChangeSettings 
+ * @param groupJoin 
+ * @param groupLeave 
+ * @param groupOfficersEdit 
+ * @param leadFormsNew 
+ * @param marketCommentDelete 
+ * @param marketCommentEdit 
+ * @param marketCommentNew 
+ * @param marketCommentRestore 
+ * @param marketOrderNew 
+ * @param marketOrderEdit 
+ * @param messageAllow 
+ * @param messageDeny 
+ * @param messageNew 
+ * @param messageRead 
+ * @param messageReply 
+ * @param messageTypingState 
+ * @param messageEdit 
+ * @param photoCommentDelete 
+ * @param photoCommentEdit 
+ * @param photoCommentNew 
+ * @param photoCommentRestore 
+ * @param photoNew 
+ * @param pollVoteNew 
+ * @param userBlock 
+ * @param userUnblock 
+ * @param videoCommentDelete 
+ * @param videoCommentEdit 
+ * @param videoCommentNew 
+ * @param videoCommentRestore 
+ * @param videoNew 
+ * @param messageReactionEvent 
+ * @param wallPostNew 
+ * @param wallReplyDelete 
+ * @param wallReplyEdit 
+ * @param wallReplyNew 
+ * @param wallReplyRestore 
+ * @param wallRepost 
+ * @param donutSubscriptionCreate 
+ * @param donutSubscriptionProlonged 
+ * @param donutSubscriptionCancelled 
+ * @param donutSubscriptionExpired 
+ * @param donutSubscriptionPriceChanged 
+ * @param donutMoneyWithdraw 
+ * @param donutMoneyWithdrawError 
+ */
 @Serializable
 data class GroupsLongPollEvents (
-    @SerialName("poll_vote_new") val pollVoteNew: BaseBoolInt,
-    @SerialName("market_comment_restore") val marketCommentRestore: BaseBoolInt,
-    @SerialName("video_comment_delete") val videoCommentDelete: BaseBoolInt,
-    @SerialName("video_comment_new") val videoCommentNew: BaseBoolInt,
-    @SerialName("board_post_delete") val boardPostDelete: BaseBoolInt,
-    @SerialName("donut_money_withdraw_error") val donutMoneyWithdrawError: BaseBoolInt,
-    @SerialName("lead_forms_new") val leadFormsNew: BaseBoolInt? = null,
-    @SerialName("message_typing_state") val messageTypingState: BaseBoolInt,
-    @SerialName("donut_subscription_price_changed") val donutSubscriptionPriceChanged: BaseBoolInt,
-    @SerialName("audio_new") val audioNew: BaseBoolInt,
-    @SerialName("video_comment_restore") val videoCommentRestore: BaseBoolInt,
-    @SerialName("wall_reply_delete") val wallReplyDelete: BaseBoolInt,
-    @SerialName("group_leave") val groupLeave: BaseBoolInt,
-    @SerialName("message_read") val messageRead: BaseBoolInt,
-    @SerialName("photo_comment_delete") val photoCommentDelete: BaseBoolInt,
-    @SerialName("donut_money_withdraw") val donutMoneyWithdraw: BaseBoolInt,
-    @SerialName("donut_subscription_create") val donutSubscriptionCreate: BaseBoolInt,
-    @SerialName("wall_reply_restore") val wallReplyRestore: BaseBoolInt,
-    @SerialName("donut_subscription_expired") val donutSubscriptionExpired: BaseBoolInt,
-    @SerialName("photo_comment_new") val photoCommentNew: BaseBoolInt,
-    @SerialName("board_post_restore") val boardPostRestore: BaseBoolInt,
-    @SerialName("wall_post_new") val wallPostNew: BaseBoolInt,
-    @SerialName("market_comment_delete") val marketCommentDelete: BaseBoolInt,
-    @SerialName("group_change_photo") val groupChangePhoto: BaseBoolInt,
     @SerialName("market_comment_new") val marketCommentNew: BaseBoolInt,
-    @SerialName("board_post_new") val boardPostNew: BaseBoolInt,
-    @SerialName("group_officers_edit") val groupOfficersEdit: BaseBoolInt,
-    @SerialName("group_change_settings") val groupChangeSettings: BaseBoolInt,
-    @SerialName("group_join") val groupJoin: BaseBoolInt,
-    @SerialName("photo_comment_restore") val photoCommentRestore: BaseBoolInt,
-    @SerialName("board_post_edit") val boardPostEdit: BaseBoolInt,
-    @SerialName("user_block") val userBlock: BaseBoolInt,
-    @SerialName("photo_comment_edit") val photoCommentEdit: BaseBoolInt,
+    @SerialName("message_edit") val messageEdit: BaseBoolInt,
+    @SerialName("message_deny") val messageDeny: BaseBoolInt,
+    @SerialName("user_unblock") val userUnblock: BaseBoolInt,
+    @SerialName("video_new") val videoNew: BaseBoolInt,
+    @SerialName("market_comment_restore") val marketCommentRestore: BaseBoolInt,
+    @SerialName("market_comment_delete") val marketCommentDelete: BaseBoolInt,
+    @SerialName("board_post_delete") val boardPostDelete: BaseBoolInt,
+    @SerialName("donut_subscription_prolonged") val donutSubscriptionProlonged: BaseBoolInt,
     @SerialName("message_reply") val messageReply: BaseBoolInt,
+    @SerialName("photo_comment_restore") val photoCommentRestore: BaseBoolInt,
+    @SerialName("donut_subscription_expired") val donutSubscriptionExpired: BaseBoolInt,
+    @SerialName("message_new") val messageNew: BaseBoolInt,
+    @SerialName("user_block") val userBlock: BaseBoolInt,
+    @SerialName("wall_post_new") val wallPostNew: BaseBoolInt,
+    @SerialName("photo_comment_delete") val photoCommentDelete: BaseBoolInt,
+    @SerialName("video_comment_edit") val videoCommentEdit: BaseBoolInt,
+    @SerialName("market_order_new") val marketOrderNew: BaseBoolInt? = null,
+    @SerialName("message_read") val messageRead: BaseBoolInt,
+    @SerialName("lead_forms_new") val leadFormsNew: BaseBoolInt? = null,
+    @SerialName("group_leave") val groupLeave: BaseBoolInt,
+    @SerialName("wall_reply_restore") val wallReplyRestore: BaseBoolInt,
+    @SerialName("board_post_new") val boardPostNew: BaseBoolInt,
+    @SerialName("donut_money_withdraw") val donutMoneyWithdraw: BaseBoolInt,
     @SerialName("wall_reply_edit") val wallReplyEdit: BaseBoolInt,
     @SerialName("message_allow") val messageAllow: BaseBoolInt,
-    @SerialName("message_new") val messageNew: BaseBoolInt,
-    @SerialName("message_reaction_event") val messageReactionEvent: BaseBoolInt,
-    @SerialName("market_order_new") val marketOrderNew: BaseBoolInt? = null,
-    @SerialName("wall_reply_new") val wallReplyNew: BaseBoolInt,
-    @SerialName("donut_subscription_prolonged") val donutSubscriptionProlonged: BaseBoolInt,
-    @SerialName("video_comment_edit") val videoCommentEdit: BaseBoolInt,
-    @SerialName("user_unblock") val userUnblock: BaseBoolInt,
+    @SerialName("board_post_restore") val boardPostRestore: BaseBoolInt,
+    @SerialName("poll_vote_new") val pollVoteNew: BaseBoolInt,
+    @SerialName("video_comment_restore") val videoCommentRestore: BaseBoolInt,
+    @SerialName("message_typing_state") val messageTypingState: BaseBoolInt,
+    @SerialName("wall_reply_delete") val wallReplyDelete: BaseBoolInt,
     @SerialName("wall_repost") val wallRepost: BaseBoolInt,
-    @SerialName("video_new") val videoNew: BaseBoolInt,
-    @SerialName("donut_subscription_cancelled") val donutSubscriptionCancelled: BaseBoolInt,
-    @SerialName("market_comment_edit") val marketCommentEdit: BaseBoolInt,
-    @SerialName("market_order_edit") val marketOrderEdit: BaseBoolInt? = null,
-    @SerialName("message_deny") val messageDeny: BaseBoolInt,
-    @SerialName("message_edit") val messageEdit: BaseBoolInt,
+    @SerialName("group_join") val groupJoin: BaseBoolInt,
+    @SerialName("donut_subscription_create") val donutSubscriptionCreate: BaseBoolInt,
+    @SerialName("donut_subscription_price_changed") val donutSubscriptionPriceChanged: BaseBoolInt,
+    @SerialName("photo_comment_new") val photoCommentNew: BaseBoolInt,
+    @SerialName("group_officers_edit") val groupOfficersEdit: BaseBoolInt,
+    @SerialName("group_change_photo") val groupChangePhoto: BaseBoolInt,
+    @SerialName("photo_comment_edit") val photoCommentEdit: BaseBoolInt,
+    @SerialName("donut_money_withdraw_error") val donutMoneyWithdrawError: BaseBoolInt,
     @SerialName("photo_new") val photoNew: BaseBoolInt,
+    @SerialName("donut_subscription_cancelled") val donutSubscriptionCancelled: BaseBoolInt,
+    @SerialName("video_comment_new") val videoCommentNew: BaseBoolInt,
+    @SerialName("market_order_edit") val marketOrderEdit: BaseBoolInt? = null,
+    @SerialName("wall_reply_new") val wallReplyNew: BaseBoolInt,
+    @SerialName("group_change_settings") val groupChangeSettings: BaseBoolInt,
+    @SerialName("video_comment_delete") val videoCommentDelete: BaseBoolInt,
+    @SerialName("audio_new") val audioNew: BaseBoolInt,
+    @SerialName("market_comment_edit") val marketCommentEdit: BaseBoolInt,
+    @SerialName("board_post_edit") val boardPostEdit: BaseBoolInt,
+    @SerialName("message_reaction_event") val messageReactionEvent: BaseBoolInt,
 )

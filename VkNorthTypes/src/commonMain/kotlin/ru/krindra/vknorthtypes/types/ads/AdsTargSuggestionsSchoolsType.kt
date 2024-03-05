@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.ads
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * School type
+ * 
+ */
 @Serializable
 enum class AdsTargSuggestionsSchoolsType(val value: String){
     @SerialName("school") SCHOOL("school"),

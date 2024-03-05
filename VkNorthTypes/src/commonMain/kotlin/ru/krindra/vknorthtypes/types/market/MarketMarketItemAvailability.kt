@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.market
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.EnumAsIntSerializer
 
+/**
+ *
+ * Information whether the item is available
+ * 
+ */
 private class MarketMarketItemAvailabilitySerializer: EnumAsIntSerializer<MarketMarketItemAvailability>(
     "MarketMarketItemAvailability", { it.value }, { v -> MarketMarketItemAvailability.values().first { it.value == v } }
 )

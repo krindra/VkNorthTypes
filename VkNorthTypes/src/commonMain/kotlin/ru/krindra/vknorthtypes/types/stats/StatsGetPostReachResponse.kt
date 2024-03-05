@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.stats
 import kotlinx.serialization.Serializable
 
 typealias StatsGetPostReachRawResponse = List<StatsWallpostStat>
-@Serializable()
+@Serializable
 data class StatsGetPostReachResponse (
     val response: StatsGetPostReachRawResponse
 )

@@ -12,6 +12,15 @@ import ru.krindra.vknorthtypes.types.groups.GroupsGroupFull
 data class MarketSearchResponse (
     val response: MarketSearchRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param viewType 
+     * @param items 
+     * @param variants 
+     * @param groups 
+     * @param filters 
+     */
     @Serializable
     data class MarketSearchRawResponse (
         @SerialName("count") val count: Int,

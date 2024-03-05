@@ -10,6 +10,10 @@ import kotlinx.serialization.Serializable
 data class GroupsAddCallbackServerResponse (
     val response: GroupsAddCallbackServerRawResponse
 ) {
+    /**
+     *
+     * @param serverId 
+     */
     @Serializable
     data class GroupsAddCallbackServerRawResponse (
         @SerialName("server_id") val serverId: Long,

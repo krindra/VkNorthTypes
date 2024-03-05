@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetObjectExtendedResponse (
     val response: GroupsGetObjectExtendedRawResponse
 ) {
+    /**
+     *
+     * @param count Total communities number
+     * @param items 
+     */
     @Serializable
     data class GroupsGetObjectExtendedRawResponse (
         @SerialName("count") val count: Int,

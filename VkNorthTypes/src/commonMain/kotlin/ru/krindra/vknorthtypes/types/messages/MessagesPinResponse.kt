@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.messages
 import kotlinx.serialization.Serializable
 
 typealias MessagesPinRawResponse = MessagesPinnedMessage
-@Serializable()
+@Serializable
 data class MessagesPinResponse (
     val response: MessagesPinRawResponse
 )

@@ -6,6 +6,11 @@ package ru.krindra.vknorthtypes.types.wall
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *
+ * Post type
+ * 
+ */
 @Serializable
 enum class WallPostType(val value: String){
     @SerialName("post") POST("post"),

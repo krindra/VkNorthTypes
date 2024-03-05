@@ -6,37 +6,67 @@ package ru.krindra.vknorthtypes.types.newsfeed
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.market.MarketPrice
-import ru.krindra.vknorthtypes.types.market.MarketMarketCategory
 import ru.krindra.vknorthtypes.types.base.BaseLikes
 import ru.krindra.vknorthtypes.types.market.MarketMarketItemAvailability
+import ru.krindra.vknorthtypes.types.market.MarketMarketCategory
 
+/**
+ *
+ * @param comments 
+ * @param likes 
+ * @param accessKey Access key for the market item
+ * @param availability 
+ * @param buttonTitle Title for button for url
+ * @param category 
+ * @param categoryV2 
+ * @param date Date when the item has been created in Unixtime
+ * @param description Item description
+ * @param externalId 
+ * @param id Item ID
+ * @param isFavorite 
+ * @param ownerId Item owner's ID
+ * @param isOwner 
+ * @param isAdult 
+ * @param price 
+ * @param thumbPhoto URL of the preview image
+ * @param title Item title
+ * @param url URL to item
+ * @param variantsGroupingId 
+ * @param isMainVariant 
+ * @param sku 
+ * @param stockAmount Inventory balances
+ * @param postId Attach for post id
+ * @param postOwnerId Attach for post owner id
+ * @param type 
+ * @param sourceId 
+ */
 @Serializable
 data class NewsfeedCommentsItemTypeMarket (
-    @SerialName("price") val price: MarketPrice,
-    @SerialName("is_owner") val isOwner: Boolean? = null,
-    @SerialName("comments") val comments: NewsfeedCommentsBase? = null,
-    @SerialName("variants_grouping_id") val variantsGroupingId: Long? = null,
-    @SerialName("date") val date: Int? = null,
-    @SerialName("title") val title: String,
-    @SerialName("source_id") val sourceId: Long? = null,
-    @SerialName("is_main_variant") val isMainVariant: Boolean? = null,
-    @SerialName("category_v2") val categoryV2: MarketMarketCategory? = null,
-    @SerialName("access_key") val accessKey: String? = null,
-    @SerialName("sku") val sku: String? = null,
-    @SerialName("button_title") val buttonTitle: String? = null,
-    @SerialName("is_adult") val isAdult: Boolean? = null,
-    @SerialName("url") val url: String? = null,
-    @SerialName("description") val description: String,
-    @SerialName("post_id") val postId: Long? = null,
-    @SerialName("stock_amount") val stockAmount: Int? = null,
-    @SerialName("owner_id") val ownerId: Long,
     @SerialName("type") val type: NewsfeedNewsfeedItemType/* WARN! WallPostType? = null */,
+    @SerialName("date") val date: Int? = null,
+    @SerialName("category_v2") val categoryV2: MarketMarketCategory? = null,
+    @SerialName("button_title") val buttonTitle: String? = null,
+    @SerialName("source_id") val sourceId: Long? = null,
     @SerialName("category") val category: MarketMarketCategory,
-    @SerialName("likes") val likes: BaseLikes? = null,
-    @SerialName("external_id") val externalId: String? = null,
-    @SerialName("id") val id: Long,
+    @SerialName("title") val title: String,
+    @SerialName("variants_grouping_id") val variantsGroupingId: Long? = null,
+    @SerialName("sku") val sku: String? = null,
+    @SerialName("post_owner_id") val postOwnerId: Long? = null,
+    @SerialName("access_key") val accessKey: String? = null,
+    @SerialName("description") val description: String,
+    @SerialName("url") val url: String? = null,
+    @SerialName("is_main_variant") val isMainVariant: Boolean? = null,
+    @SerialName("price") val price: MarketPrice,
+    @SerialName("owner_id") val ownerId: Long,
     @SerialName("is_favorite") val isFavorite: Boolean? = null,
     @SerialName("thumb_photo") val thumbPhoto: String? = null,
-    @SerialName("post_owner_id") val postOwnerId: Long? = null,
+    @SerialName("post_id") val postId: Long? = null,
+    @SerialName("external_id") val externalId: String? = null,
+    @SerialName("stock_amount") val stockAmount: Int? = null,
+    @SerialName("likes") val likes: BaseLikes? = null,
+    @SerialName("is_adult") val isAdult: Boolean? = null,
+    @SerialName("id") val id: Long,
+    @SerialName("is_owner") val isOwner: Boolean? = null,
     @SerialName("availability") val availability: MarketMarketItemAvailability,
+    @SerialName("comments") val comments: NewsfeedCommentsBase? = null,
 )

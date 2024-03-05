@@ -12,6 +12,13 @@ import ru.krindra.vknorthtypes.types.polls.PollsPoll
 data class BoardGetCommentsResponse (
     val response: BoardGetCommentsRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param poll 
+     * @param realOffset Offset of comment
+     */
     @Serializable
     data class BoardGetCommentsRawResponse (
         @SerialName("count") val count: Int,

@@ -12,6 +12,12 @@ import ru.krindra.vknorthtypes.types.base.BaseBoolInt
 data class PhotosGetAllResponse (
     val response: PhotosGetAllRawResponse
 ) {
+    /**
+     *
+     * @param count Total number
+     * @param items 
+     * @param more Information whether next page is presented
+     */
     @Serializable
     data class PhotosGetAllRawResponse (
         @SerialName("count") val count: Int,

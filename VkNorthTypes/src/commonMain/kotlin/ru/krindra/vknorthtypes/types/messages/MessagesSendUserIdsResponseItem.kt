@@ -7,10 +7,17 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import ru.krindra.vknorthtypes.types.base.BaseMessageError
 
+/**
+ *
+ * @param peerId 
+ * @param messageId 
+ * @param conversationMessageId 
+ * @param error 
+ */
 @Serializable
 data class MessagesSendUserIdsResponseItem (
-    @SerialName("error") val error: BaseMessageError? = null,
     @SerialName("message_id") val messageId: Long,
-    @SerialName("peer_id") val peerId: Long,
     @SerialName("conversation_message_id") val conversationMessageId: Long? = null,
+    @SerialName("peer_id") val peerId: Long,
+    @SerialName("error") val error: BaseMessageError? = null,
 )

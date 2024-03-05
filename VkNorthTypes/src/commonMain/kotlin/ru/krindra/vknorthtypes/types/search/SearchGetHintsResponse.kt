@@ -10,6 +10,12 @@ import kotlinx.serialization.Serializable
 data class SearchGetHintsResponse (
     val response: SearchGetHintsRawResponse
 ) {
+    /**
+     *
+     * @param count 
+     * @param items 
+     * @param suggestedQueries 
+     */
     @Serializable
     data class SearchGetHintsRawResponse (
         @SerialName("count") val count: Int,

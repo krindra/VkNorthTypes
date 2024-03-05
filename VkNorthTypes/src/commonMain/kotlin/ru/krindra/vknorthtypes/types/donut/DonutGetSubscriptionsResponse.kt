@@ -14,6 +14,13 @@ import ru.krindra.vknorthtypes.types.users.UsersUserFull
 data class DonutGetSubscriptionsResponse (
     val response: DonutGetSubscriptionsRawResponse
 ) {
+    /**
+     *
+     * @param subscriptions 
+     * @param count 
+     * @param profiles 
+     * @param groups 
+     */
     @Serializable
     data class DonutGetSubscriptionsRawResponse (
         @SerialName("subscriptions") val subscriptions: List<DonutDonatorSubscriptionInfo>,

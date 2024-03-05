@@ -10,6 +10,11 @@ import kotlinx.serialization.Serializable
 data class GroupsGetInvitesResponse (
     val response: GroupsGetInvitesRawResponse
 ) {
+    /**
+     *
+     * @param count Total communities number
+     * @param items 
+     */
     @Serializable
     data class GroupsGetInvitesRawResponse (
         @SerialName("count") val count: Int,

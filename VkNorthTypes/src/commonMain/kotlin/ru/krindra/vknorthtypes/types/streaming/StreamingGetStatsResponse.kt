@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.streaming
 import kotlinx.serialization.Serializable
 
 typealias StreamingGetStatsRawResponse = List<StreamingStats>
-@Serializable()
+@Serializable
 data class StreamingGetStatsResponse (
     val response: StreamingGetStatsRawResponse
 )

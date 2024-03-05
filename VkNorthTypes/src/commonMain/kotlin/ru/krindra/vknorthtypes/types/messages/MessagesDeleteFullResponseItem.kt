@@ -5,9 +5,17 @@ package ru.krindra.vknorthtypes.types.messages
 // **********
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import ru.krindra.vknorthtypes.types.base.BaseMessageError
 import ru.krindra.vknorthtypes.types.base.BaseBoolInt
+import ru.krindra.vknorthtypes.types.base.BaseMessageError
 
+/**
+ *
+ * @param peerId 
+ * @param messageId 
+ * @param conversationMessageId 
+ * @param response 
+ * @param error 
+ */
 @Serializable
 data class MessagesDeleteFullResponseItem (
     @SerialName("message_id") val messageId: Long? = null,

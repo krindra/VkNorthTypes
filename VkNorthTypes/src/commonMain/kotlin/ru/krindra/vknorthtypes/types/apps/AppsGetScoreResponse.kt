@@ -6,7 +6,12 @@ package ru.krindra.vknorthtypes.types.apps
 import kotlinx.serialization.Serializable
 
 typealias AppsGetScoreRawResponse = Int
-@Serializable()
+/**
+ *
+ * Score number
+ * 
+ */
+@Serializable
 data class AppsGetScoreResponse (
     val response: AppsGetScoreRawResponse
 )

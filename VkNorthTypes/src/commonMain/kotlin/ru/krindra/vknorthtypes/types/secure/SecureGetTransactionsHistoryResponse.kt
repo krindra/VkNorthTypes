@@ -6,7 +6,7 @@ package ru.krindra.vknorthtypes.types.secure
 import kotlinx.serialization.Serializable
 
 typealias SecureGetTransactionsHistoryRawResponse = List<SecureTransaction>
-@Serializable()
+@Serializable
 data class SecureGetTransactionsHistoryResponse (
     val response: SecureGetTransactionsHistoryRawResponse
 )
