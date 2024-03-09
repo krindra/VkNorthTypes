@@ -10,11 +10,11 @@ plugins {
 }
 
 group = "ru.krindra"
-version = "0.2.1"
+version = "0.2.2"
 
 kotlin {
     withSourcesJar(true)
-    kotlin.applyDefaultHierarchyTemplate()
+//    kotlin.applyDefaultHierarchyTemplate()
     jvm()
     androidTarget {
         publishLibraryVariants("release")
@@ -28,6 +28,8 @@ kotlin {
     iosArm64()
     iosSimulatorArm64()
     linuxX64()
+    mingwX64()
+    js{ nodejs() }
 
     sourceSets {
         val commonMain by getting {

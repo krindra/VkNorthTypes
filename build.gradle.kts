@@ -7,6 +7,12 @@ plugins {
     alias(libs.plugins.nmcp)
 }
 
+buildscript {
+    dependencies {
+        classpath(libs.kotlin.gradle.plugin)
+    }
+}
+
 nmcp {
     publishAllProjectsProbablyBreakingProjectIsolation {
         username.set(findProperty("sonatypeUsername") as String)
